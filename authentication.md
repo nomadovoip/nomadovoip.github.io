@@ -14,5 +14,6 @@ If your `username` is myemail@myserver.com and your `password` is 123456, your b
 > ```curl
 > curl -X POST \
 > https://api.nomado.eu \
-> -H 'Authorization: BASIC bXllbWFpbEBteXNlcnZlci5jb206MTIzNDU2' //Base64 encoding for myemail@myserver.com:123456
+> -H 'Authorization: BASIC bXllbWFpbEBteXNlcnZlci5jb206MTIzNDU2' 
+> //Base64 encoding for myemail@myserver.com:123456
 > ```
