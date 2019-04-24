@@ -5,10 +5,11 @@
   * [Quick start](cover.md)
 
 * SDKs
-  * Introduction
-  * Javascript SDK
-  * PHP SDK
-  * Python SDK
+  * [Javascript](sdk/javascript.md)
+  * [PHP](sdk/php.md)
+  * [Python](sdk/python.md)
+
+* API reference
 
 * Account
 
