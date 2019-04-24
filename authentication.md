@@ -17,3 +17,6 @@ If your `username` is myemail@myserver.com and your `password` is 123456, your b
 > -H 'Authorization: BASIC bXllbWFpbEBteXNlcnZlci5jb206MTIzNDU2' 
 > //Base64 encoding for myemail@myserver.com:123456
 > ```
+
+
+!> Work in progress for other methods.
