@@ -16,7 +16,7 @@ npm install nomado
 
 ## Quickstart
 
-!> If you do not have a nomado account, please [signup](https://my.nomado.eu/join.) and get **free 10€ credit** to continue.
+!> If you do not have a nomado account, please [signup](https://my.nomado.eu/join) and get **free 10€ credit** to continue.
 
 Below is a quick example for initializing the library and sending a SMS.
 
