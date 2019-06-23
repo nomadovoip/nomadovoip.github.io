@@ -17,4 +17,6 @@
   * [Send](messaging/messaging.md)
 
 * OTP
+  * [Create](otp/create.md)
+  * [Verify](otp/verify.md)
 
