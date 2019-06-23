@@ -6,7 +6,6 @@
 * SDKs
   * [Javascript](sdk/javascript.md "JS SDK: Send and receive sms, otp and 2fa - nomado REST API")
   * [PHP](sdk/php.md)
-  * [Python](sdk/python.md)
 
 * API reference
 
@@ -15,6 +14,7 @@
 * Voice
 
 * Messaging
+  * [Send](messaging/messaging.md)
 
 * OTP
 
