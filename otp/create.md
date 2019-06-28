@@ -1,6 +1,9 @@
 ## Overview
+OTP stands for One time password / pin. Setting up OTP from scratch is cumbersome and require some sleeve rolling tasks such as generating random pin, storing it for verification (including setting up database), send the token via sms, writing endpoints for verifying later, etc.
+this function let you skip all that problems and use our OTP as service for free (normal sms charge applies)
+
 This endpoint allows you to implement Two Factor Authentication the easy way, by sending
-a SMS with One Time Password (OTP).
+a SMS with OTP.
 
 ## API Endpoint
 

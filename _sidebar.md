@@ -14,6 +14,6 @@
   * [Create](otp/create.md)
   * [Verify](otp/verify.md)
 
-* Account
-
-* Voice
+* HLR
+  * [Fetch](hlr/fetch.md)
+  * [Validate](hlr/validate.md)

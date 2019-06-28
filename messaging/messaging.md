@@ -13,7 +13,7 @@ The JSON object representing the SMS to send. Should be included in request body
 
 | key | description | required | default value |
 |---|---|---|---|
-|to|Array of`E164`formatted mobile numbers | Yes |  |
+|to|`array<string>` Array of`E164`formatted mobile numbers | Yes |  |
 |message|`string` Your SMS message| Yes | |
 |unicode|`boolean` Indicates whether your message contains non-gsm characters | No | false |
 

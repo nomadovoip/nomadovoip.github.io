@@ -1,5 +1,5 @@
 ## Overview
-Once the SMS containing the OTP has been sent, this endpoint allows you to verify the token submitted by the user.
+OTP is useless if you cannot verify, isn't it? Lets see how easy it is to verify the OTP. no local storage required!
 
 ## API Endpoint
 
@@ -23,6 +23,8 @@ The JSON object representing the OTP to verify. Should be included in request bo
 |200|`success` Request sent successfully |
 |400|`bad request` Incorrect or missing parameters |
 |401|`unauthorized` Invalid credentials or incorrect authentication method |
+
+!> OTP as the name suggest, Once verified or expired, will be destroyed.
 
 ___
 
