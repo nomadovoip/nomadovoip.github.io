@@ -21,10 +21,16 @@
     window.$docsify = {
       name: 'nomado API & SDKs documentation',
       homepage: 'home.md',
+      basePath: '/',
+      nameLink: {
+        '/fr/': '/fr/home.md'
+      },
       repo: '',
+      routerMode: 'hash',
       loadSidebar: true,
       loadNavbar: true,
       maxLevel: 4,
+      fallbackLanguages: ['fr', 'en'],
       subMaxLevel: 2,
       logo: '_media/nomado.png',
       themeColor: '#008ad7',

@@ -1,3 +1,3 @@
 * Translations
-  * [:uk:](/)
-  * [:fr:](/)
+  * [:uk: English](/)
+  * [:fr: French](/fr/home)
