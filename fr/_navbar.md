@@ -1,3 +1,4 @@
 * Traductions
   * [:uk: Anglais](/)
-  * [:fr: Français](/fr/)
+  * [:fr: Français](/fr/home)
+  * [:es: Espagnol](/es/home)
