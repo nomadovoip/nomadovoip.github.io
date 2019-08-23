@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OTP on nomado API | Send sms | Place call | OTP | 2FA</title>
+    <link>https://developer.nomado.eu/fr/otp/</link>
+    <description>Recent content in OTP on nomado API | Send sms | Place call | OTP | 2FA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Everything is mine</copyright>
+    
+	<atom:link href="https://developer.nomado.eu/fr/otp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Create OTP</title>
+      <link>https://developer.nomado.eu/fr/otp/create-2fa-token/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/otp/create-2fa-token/</guid>
+      <description>Ce point de terminaison vous permet d’implémenter facilement l’authentification à deux facteurs en envoyant un SMS avec OTP.
+Point de terminaison de l&amp;rsquo;API POST `https://api.nomado.eu/2fa/create`  Authentification Vous pouvez choisir l&amp;rsquo;une des méthodes d&amp;rsquo;authentification référencées ici.
+L’objet du corps L&amp;rsquo;objet JSON représentant l’OTP à envoyer devrait être inclus dans le corps de la demande.
+   options description requis valeur par défaut     to string E164 formatted mobile number Oui    template string MUST contain {{CODE}} literal in it, which will be replaced by the generated OTP Non {{CODE}   type string Type of OTP required.</description>
+    </item>
+    
+    <item>
+      <title>Verify OTP</title>
+      <link>https://developer.nomado.eu/fr/otp/verify-2fa-token/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/otp/verify-2fa-token/</guid>
+      <description>Général L’OTP est inutile si vous ne pouvez pas le vérifier, n&amp;rsquo;est-ce pas? Voyons à quel point il est facile de vérifier l&amp;rsquo;OTP. pas de stockage local requis!
+Point de terminaison de l&amp;rsquo;API POST `https://api.nomado.eu/2fa/verify`  Authentification Vous pouvez choisir l&amp;rsquo;une des méthodes d&amp;rsquo;authentification référencées ici.
+L’objet du corps L&amp;rsquo;objet JSON représentant l’OTP à envoyer devrait être inclus dans le corps de la demande.
+   options description requis valeur par défaut     number string E164 formatted mobile number Oui    token string The OTP to verify Oui     Réponse    code du status description     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    L’OTP, comme son nom l’indique, une fois vérifié ou expiré, sera détruit.</description>
+    </item>
+    
+  </channel>
+</rss>

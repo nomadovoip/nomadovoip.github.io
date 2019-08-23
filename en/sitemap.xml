@@ -4,58 +4,212 @@
   
   <url>
     <loc>https://developer.nomado.eu/getting-started/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/getting-started/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/getting-started/"
+                />
   </url>
   
   <url>
     <loc>https://developer.nomado.eu/getting-started/base-url/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/getting-started/url-de-base/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/getting-started/base-url/"
+                />
   </url>
   
   <url>
     <loc>https://developer.nomado.eu/getting-started/authentication/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/getting-started/authentification/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/getting-started/authentication/"
+                />
   </url>
   
   <url>
     <loc>https://developer.nomado.eu/sdks/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/sdks/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/sdks/"
+                />
   </url>
   
   <url>
     <loc>https://developer.nomado.eu/sdks/javascript-sdk/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/sdks/javascript-sdk/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/sdks/javascript-sdk/"
+                />
   </url>
   
   <url>
     <loc>https://developer.nomado.eu/sdks/php-sdk/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/sdks/php-sdk/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/sdks/php-sdk/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/sdks/python-sdk/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/sdks/python-sdk/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/sdks/python-sdk/"
+                />
   </url>
   
   <url>
     <loc>https://developer.nomado.eu/messaging/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/messaging/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/messaging/"
+                />
   </url>
   
   <url>
     <loc>https://developer.nomado.eu/messaging/php-sdk/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/messaging/php-sdk/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/messaging/php-sdk/"
+                />
   </url>
   
   <url>
     <loc>https://developer.nomado.eu/otp/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/otp/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/otp/"
+                />
   </url>
   
   <url>
     <loc>https://developer.nomado.eu/otp/create-2fa-token/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/otp/create-2fa-token/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/otp/create-2fa-token/"
+                />
   </url>
   
   <url>
     <loc>https://developer.nomado.eu/otp/verify-2fa-token/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/otp/verify-2fa-token/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/otp/verify-2fa-token/"
+                />
   </url>
   
   <url>
     <loc>https://developer.nomado.eu/hlr/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/hlr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/hlr/"
+                />
   </url>
   
   <url>
     <loc>https://developer.nomado.eu/hlr/get-hlr-information/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/hlr/get-hlr-information/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/hlr/get-hlr-information/"
+                />
   </url>
   
   <url>
     <loc>https://developer.nomado.eu/hlr/get-free-hlr-information/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/hlr/get-free-hlr-information/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/hlr/get-free-hlr-information/"
+                />
   </url>
   
   <url>

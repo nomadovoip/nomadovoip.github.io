@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SDKs on nomado API | Send sms | Place call | OTP | 2FA</title>
+    <link>https://developer.nomado.eu/fr/sdks/</link>
+    <description>Recent content in SDKs on nomado API | Send sms | Place call | OTP | 2FA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Everything is mine</copyright>
+    
+	<atom:link href="https://developer.nomado.eu/fr/sdks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Javascript SDK</title>
+      <link>https://developer.nomado.eu/fr/sdks/javascript-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/sdks/javascript-sdk/</guid>
+      <description>Github | npm
+Le moyen le plus simple et le plus recommandé (lire: le plus intelligent) d&amp;rsquo;utiliser l&amp;rsquo;API REST de nomado dans votre application nodejs consiste à utiliser notre sdk.
+Installation npm install nomado  Démarrage rapide Si vous n’avez pas encore de compte nomado, créez-en un ici et recevez jusqu’à 10€ de crédit pour continuer et tester.
+ Voici un exemple rapide pour initialiser la librairie et envoyer un SMS.</description>
+    </item>
+    
+    <item>
+      <title>PHP SDK</title>
+      <link>https://developer.nomado.eu/fr/sdks/php-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/sdks/php-sdk/</guid>
+      <description> Développement en cours. « Bien attend qui parratend
+ PHP Core Développement en cours. « Bien attend qui parratend
+ Laravel Développement en cours. « Bien attend qui parratend
+ Compose Développement en cours. « Bien attend qui parratend
+ </description>
+    </item>
+    
+    <item>
+      <title>Python SDK</title>
+      <link>https://developer.nomado.eu/fr/sdks/python-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/sdks/python-sdk/</guid>
+      <description> Développement en cours. « Bien attend qui parratend ».
+ </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,15 +1,130 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on My French</title>
+    <title>Home on nomado API | Send sms | Place call | OTP | 2FA</title>
     <link>https://developer.nomado.eu/fr/</link>
-    <description>Recent content in Home on My French</description>
+    <description>Recent content in Home on nomado API | Send sms | Place call | OTP | 2FA</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Everything is mine</copyright>
     <lastBuildDate>Thu, 22 Aug 2019 17:29:35 +0300</lastBuildDate>
     
 	<atom:link href="https://developer.nomado.eu/fr/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>URL de base</title>
+      <link>https://developer.nomado.eu/fr/getting-started/url-de-base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/getting-started/url-de-base/</guid>
+      <description>L’API REST de nomado est appellée avec l’URL suivante:
+https://api.nomado.eu  L’utilisation des libraries SDK est fortement recommandée afin de ne pas être confronté à des futurs changements perturbants.
+ L’API REST de nomado est appelée uniquement avec HTTPS pour assurer la confidentialité des données, GDPR, PSD2, PCI et d’autres conformités.</description>
+    </item>
+    
+    <item>
+      <title>Authentification</title>
+      <link>https://developer.nomado.eu/fr/getting-started/authentification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/getting-started/authentification/</guid>
+      <description>Tous les points de terminaison de l&amp;rsquo;API REST de nomado sont protégés par trois méthodes d&amp;rsquo;authentification: informations d&amp;rsquo;identification de l&amp;rsquo;utilisateur, jetons Web JSON et clés d’API (API keys).
+Nous vous recommandons d&amp;rsquo;utiliser des jetons Web JSON et des clés d&amp;rsquo;API.
+ Informations d&amp;rsquo;identification de l’utilisateur L&amp;rsquo;authentification basée sur les informations d&amp;rsquo;identification de l&amp;rsquo;utilisateur est le moyen le plus facile de tester et d&amp;rsquo;explorer l&amp;rsquo;API REST nomado. Les informations d&amp;rsquo;identification de l&amp;rsquo;utilisateur doivent être fournies avec chaque demande dans l&amp;rsquo;en-tête Authorization codée en base64 et séparés par :.</description>
+    </item>
+    
+    <item>
+      <title>Javascript SDK</title>
+      <link>https://developer.nomado.eu/fr/sdks/javascript-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/sdks/javascript-sdk/</guid>
+      <description>Github | npm
+Le moyen le plus simple et le plus recommandé (lire: le plus intelligent) d&amp;rsquo;utiliser l&amp;rsquo;API REST de nomado dans votre application nodejs consiste à utiliser notre sdk.
+Installation npm install nomado  Démarrage rapide Si vous n’avez pas encore de compte nomado, créez-en un ici et recevez jusqu’à 10€ de crédit pour continuer et tester.
+ Voici un exemple rapide pour initialiser la librairie et envoyer un SMS.</description>
+    </item>
+    
+    <item>
+      <title>PHP SDK</title>
+      <link>https://developer.nomado.eu/fr/sdks/php-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/sdks/php-sdk/</guid>
+      <description> Développement en cours. « Bien attend qui parratend
+ PHP Core Développement en cours. « Bien attend qui parratend
+ Laravel Développement en cours. « Bien attend qui parratend
+ Compose Développement en cours. « Bien attend qui parratend
+ </description>
+    </item>
+    
+    <item>
+      <title>Python SDK</title>
+      <link>https://developer.nomado.eu/fr/sdks/python-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/sdks/python-sdk/</guid>
+      <description> Développement en cours. « Bien attend qui parratend ».
+ </description>
+    </item>
+    
+    <item>
+      <title>Send SMS</title>
+      <link>https://developer.nomado.eu/fr/messaging/php-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/messaging/php-sdk/</guid>
+      <description>Général Ce point de terminaison vous permet d’envoyer un ou plusieurs sms à la fois dans n’importe quel pays.
+Point de terminaison de l&amp;rsquo;API POST `https://api.nomado.eu/sms/send`  Authentification Vous pouvez choisir l&amp;rsquo;une des méthodes d&amp;rsquo;authentification référencées ici.
+Objet message L&amp;rsquo;objet JSON représentant le SMS à envoyer devrait être inclus dans le corps de la demande.
+   clé description requis valeur par défaut     vers array&amp;lt;string&amp;gt; Array ofE164formatted mobile numbers Oui    message string Your SMS message Oui    unicode boolean Indicates whether your message contains non-gsm characters Non false    Les messages SMS sont limités à 160 caractères (70 si unicode est utilisé).</description>
+    </item>
+    
+    <item>
+      <title>Create OTP</title>
+      <link>https://developer.nomado.eu/fr/otp/create-2fa-token/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/otp/create-2fa-token/</guid>
+      <description>Ce point de terminaison vous permet d’implémenter facilement l’authentification à deux facteurs en envoyant un SMS avec OTP.
+Point de terminaison de l&amp;rsquo;API POST `https://api.nomado.eu/2fa/create`  Authentification Vous pouvez choisir l&amp;rsquo;une des méthodes d&amp;rsquo;authentification référencées ici.
+L’objet du corps L&amp;rsquo;objet JSON représentant l’OTP à envoyer devrait être inclus dans le corps de la demande.
+   options description requis valeur par défaut     to string E164 formatted mobile number Oui    template string MUST contain {{CODE}} literal in it, which will be replaced by the generated OTP Non {{CODE}   type string Type of OTP required.</description>
+    </item>
+    
+    <item>
+      <title>Verify OTP</title>
+      <link>https://developer.nomado.eu/fr/otp/verify-2fa-token/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/otp/verify-2fa-token/</guid>
+      <description>Général L’OTP est inutile si vous ne pouvez pas le vérifier, n&amp;rsquo;est-ce pas? Voyons à quel point il est facile de vérifier l&amp;rsquo;OTP. pas de stockage local requis!
+Point de terminaison de l&amp;rsquo;API POST `https://api.nomado.eu/2fa/verify`  Authentification Vous pouvez choisir l&amp;rsquo;une des méthodes d&amp;rsquo;authentification référencées ici.
+L’objet du corps L&amp;rsquo;objet JSON représentant l’OTP à envoyer devrait être inclus dans le corps de la demande.
+   options description requis valeur par défaut     number string E164 formatted mobile number Oui    token string The OTP to verify Oui     Réponse    code du status description     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    L’OTP, comme son nom l’indique, une fois vérifié ou expiré, sera détruit.</description>
+    </item>
+    
+    <item>
+      <title>Fetch</title>
+      <link>https://developer.nomado.eu/fr/hlr/get-hlr-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/hlr/get-hlr-information/</guid>
+      <description>Point de terminaison de l’API POST `https://api.nomado.eu/hlr`  Authentification Vous pouvez choisir l&amp;rsquo;une des méthodes d&amp;rsquo;authentification référencées ici.
+L’objet du corps L&amp;rsquo;objet JSON représentant le numéro à vérifier devrait être inclus dans le corps de la demande.
+   options description requis valeur par défaut     numbers array&amp;lt;string&amp;gt; tableau des numéros mobiles formatés E164 Yes     Réponse    code du status description     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Exemple de requête En-têtes</description>
+    </item>
+    
+    <item>
+      <title>Free HLR Validation</title>
+      <link>https://developer.nomado.eu/fr/hlr/get-free-hlr-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/hlr/get-free-hlr-information/</guid>
+      <description>Général Pas aussi robuste qu&amp;rsquo;une recherche hlr, ce point de terminaison vous permet de récupérer des informations de base concernant un numéro de téléphone, par exemple s&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un numéro de téléphone valide, d&amp;rsquo;un téléphone fixe ou mobile, du pays auquel il appartient, etc. Cette recherche ne vous coûte rien.
+Point de terminaison de l’API POST `https://api.nomado.eu/hlr/validate`  Authentification Vous pouvez choisir l&amp;rsquo;une des méthodes d&amp;rsquo;authentification référencées ici.
+Requête URL Il vous suffit d’ajouter le numéro au point de terminaison, comme https://api.</description>
+    </item>
     
   </channel>
 </rss>

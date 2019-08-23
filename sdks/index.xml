@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>SDKs on My English</title>
+    <title>SDKs on nomado API | Send sms | Place call | OTP | 2FA</title>
     <link>https://developer.nomado.eu/sdks/</link>
-    <description>Recent content in SDKs on My English</description>
+    <description>Recent content in SDKs on nomado API | Send sms | Place call | OTP | 2FA</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Everything is mine</copyright>
     
@@ -33,6 +33,16 @@ const nomadoClient = require(&#39;nomado&#39;); const USERNAME = &#39;username&#
  PHP Core Work in progress
  Laravel Work in progress
  Compose Work in progress
+ </description>
+    </item>
+    
+    <item>
+      <title>Python SDK</title>
+      <link>https://developer.nomado.eu/sdks/python-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sdks/python-sdk/</guid>
+      <description> Work in progress
  </description>
     </item>
     

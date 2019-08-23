@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HLR on nomado API | Send sms | Place call | OTP | 2FA</title>
+    <link>https://developer.nomado.eu/fr/hlr/</link>
+    <description>Recent content in HLR on nomado API | Send sms | Place call | OTP | 2FA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Everything is mine</copyright>
+    
+	<atom:link href="https://developer.nomado.eu/fr/hlr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fetch</title>
+      <link>https://developer.nomado.eu/fr/hlr/get-hlr-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/hlr/get-hlr-information/</guid>
+      <description>Point de terminaison de l’API POST `https://api.nomado.eu/hlr`  Authentification Vous pouvez choisir l&amp;rsquo;une des méthodes d&amp;rsquo;authentification référencées ici.
+L’objet du corps L&amp;rsquo;objet JSON représentant le numéro à vérifier devrait être inclus dans le corps de la demande.
+   options description requis valeur par défaut     numbers array&amp;lt;string&amp;gt; tableau des numéros mobiles formatés E164 Yes     Réponse    code du status description     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Exemple de requête En-têtes</description>
+    </item>
+    
+    <item>
+      <title>Free HLR Validation</title>
+      <link>https://developer.nomado.eu/fr/hlr/get-free-hlr-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/hlr/get-free-hlr-information/</guid>
+      <description>Général Pas aussi robuste qu&amp;rsquo;une recherche hlr, ce point de terminaison vous permet de récupérer des informations de base concernant un numéro de téléphone, par exemple s&amp;rsquo;il s&amp;rsquo;agit d&amp;rsquo;un numéro de téléphone valide, d&amp;rsquo;un téléphone fixe ou mobile, du pays auquel il appartient, etc. Cette recherche ne vous coûte rien.
+Point de terminaison de l’API POST `https://api.nomado.eu/hlr/validate`  Authentification Vous pouvez choisir l&amp;rsquo;une des méthodes d&amp;rsquo;authentification référencées ici.
+Requête URL Il vous suffit d’ajouter le numéro au point de terminaison, comme https://api.</description>
+    </item>
+    
+  </channel>
+</rss>

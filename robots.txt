@@ -1,0 +1,41 @@
+User-agent: *
+
+# Sitemap files
+Sitemap: https://developer.nomado.eu/sitemap.xml
+
+
+allow: /getting-started/
+
+allow: /getting-started/base-url/
+
+allow: /getting-started/authentication/
+
+allow: /sdks/
+
+allow: /sdks/javascript-sdk/
+
+allow: /sdks/php-sdk/
+
+allow: /sdks/python-sdk/
+
+allow: /messaging/
+
+allow: /messaging/php-sdk/
+
+allow: /otp/
+
+allow: /otp/create-2fa-token/
+
+allow: /otp/verify-2fa-token/
+
+allow: /hlr/
+
+allow: /hlr/get-hlr-information/
+
+allow: /hlr/get-free-hlr-information/
+
+allow: /
+
+allow: /categories/
+
+allow: /tags/

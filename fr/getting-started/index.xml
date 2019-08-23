@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on nomado API | Send sms | Place call | OTP | 2FA</title>
+    <link>https://developer.nomado.eu/fr/getting-started/</link>
+    <description>Recent content in Getting Started on nomado API | Send sms | Place call | OTP | 2FA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Everything is mine</copyright>
+    
+	<atom:link href="https://developer.nomado.eu/fr/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>URL de base</title>
+      <link>https://developer.nomado.eu/fr/getting-started/url-de-base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/getting-started/url-de-base/</guid>
+      <description>L’API REST de nomado est appellée avec l’URL suivante:
+https://api.nomado.eu  L’utilisation des libraries SDK est fortement recommandée afin de ne pas être confronté à des futurs changements perturbants.
+ L’API REST de nomado est appelée uniquement avec HTTPS pour assurer la confidentialité des données, GDPR, PSD2, PCI et d’autres conformités.</description>
+    </item>
+    
+    <item>
+      <title>Authentification</title>
+      <link>https://developer.nomado.eu/fr/getting-started/authentification/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/fr/getting-started/authentification/</guid>
+      <description>Tous les points de terminaison de l&amp;rsquo;API REST de nomado sont protégés par trois méthodes d&amp;rsquo;authentification: informations d&amp;rsquo;identification de l&amp;rsquo;utilisateur, jetons Web JSON et clés d’API (API keys).
+Nous vous recommandons d&amp;rsquo;utiliser des jetons Web JSON et des clés d&amp;rsquo;API.
+ Informations d&amp;rsquo;identification de l’utilisateur L&amp;rsquo;authentification basée sur les informations d&amp;rsquo;identification de l&amp;rsquo;utilisateur est le moyen le plus facile de tester et d&amp;rsquo;explorer l&amp;rsquo;API REST nomado. Les informations d&amp;rsquo;identification de l&amp;rsquo;utilisateur doivent être fournies avec chaque demande dans l&amp;rsquo;en-tête Authorization codée en base64 et séparés par :.</description>
+    </item>
+    
+  </channel>
+</rss>
