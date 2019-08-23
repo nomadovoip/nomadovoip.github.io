@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on My French</title>
+    <link>https://developer.nomado.eu/fr/</link>
+    <description>Recent content in Home on My French</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Everything is mine</copyright>
+    <lastBuildDate>Thu, 22 Aug 2019 17:29:35 +0300</lastBuildDate>
+    
+	<atom:link href="https://developer.nomado.eu/fr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

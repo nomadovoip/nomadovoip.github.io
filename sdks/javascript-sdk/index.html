@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.57.2" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Javascript SDK :: My English</title>
+
+    
+    <link href="/css/nucleus.css?1566522321" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1566522321" rel="stylesheet">
+    <link href="/css/hybrid.css?1566522321" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1566522321" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1566522321" rel="stylesheet">
+    <link href="/css/auto-complete.css?1566522321" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1566522321" rel="stylesheet">
+    <link href="/css/theme.css?1566522321" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1566522321" rel="stylesheet">
+    
+      <link href="/css/theme-nomado.css?1566522321" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1566522321"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/sdks/javascript-sdk/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a id="logo" href="https://developer.nomado.eu">
+  <img style="max-width: 80%;" align="left" src="/nomado-logo.png" />
+</a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1566522321"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1566522321"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/developer.nomado.eu";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1566522321"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started/" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/getting-started/">
+          <b>1. </b>Getting Started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/base-url/" title="Base URL" class="dd-item ">
+        <a href="/getting-started/base-url/">
+        - Base URL
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/authentication/" title="Authentication" class="dd-item ">
+        <a href="/getting-started/authentication/">
+        - Authentication
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/sdks/" title="SDKs" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/sdks/">
+          <b>2. </b>SDKs
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/sdks/javascript-sdk/" title="Javascript SDK" class="dd-item active">
+        <a href="/sdks/javascript-sdk/">
+        - Javascript
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/sdks/php-sdk/" title="PHP SDK" class="dd-item ">
+        <a href="/sdks/php-sdk/">
+        - PHP
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/messaging/" title="Messaging" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/messaging/">
+          <b>3. </b>Messaging
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/messaging/php-sdk/" title="Send SMS" class="dd-item ">
+        <a href="/messaging/php-sdk/">
+        - /sms/send
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/otp/" title="OTP" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/otp/">
+          <b>4. </b>OTP
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/otp/create-2fa-token/" title="Create OTP" class="dd-item ">
+        <a href="/otp/create-2fa-token/">
+        - /2fa/create
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/otp/verify-2fa-token/" title="Verify OTP" class="dd-item ">
+        <a href="/otp/verify-2fa-token/">
+        - /2fa/verify
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/hlr/" title="HLR" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/hlr/">
+          <b>5. </b>HLR
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hlr/get-hlr-information/" title="Fetch" class="dd-item ">
+        <a href="/hlr/get-hlr-information/">
+        - /hlr/
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/hlr/get-free-hlr-information/" title="Free HLR Validation" class="dd-item ">
+        <a href="/hlr/get-free-hlr-information/">
+        - /hlr/validate
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+          <div class="select-style">
+            <select id="select-language" onchange="location = this.value;">
+          
+          
+          
+              
+              
+                  
+                    
+                    
+                      <option id="en" value="https://developer.nomado.eu/sdks/javascript-sdk/" selected>English</option>
+                    
+                  
+              
+                  
+              
+          
+        </select>
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
+          <g>
+            <g id="arrow-drop-down">
+              <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+            </g>
+          </g>
+        </svg>
+        </div>
+        </a>
+        </li>
+      
+      
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <p>Built with <i class="fas fa-heart"></i> at <a href="https://www.nomado.eu">nomado</a>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Home</a> > <a href='/sdks/'>SDKs</a> > Javascript SDK
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#quickstart">Quickstart</a>
+<ul>
+<li><a href="#responses">Responses</a></li>
+<li><a href="#authentication">Authentication</a></li>
+</ul></li>
+<li><a href="#functions">Functions</a>
+<ul>
+<li><a href="#sms">SMS</a>
+<ul>
+<li>
+<ul>
+<li><a href="#sms-send">sms.send()</a></li>
+</ul></li>
+<li><a href="#otp">OTP</a>
+<ul>
+<li><a href="#otp-send">otp.send()</a></li>
+<li><a href="#otp-verify">otp.verify()</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#hlr">HLR</a>
+<ul>
+<li>
+<ul>
+<li><a href="#hlr-fetch">hlr.fetch()</a></li>
+<li><a href="#hlr-validate">hlr.validate()</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Javascript SDK
+            </h1>
+          
+
+        
+
+
+
+
+
+<p><a href="https://github.com/nomadovoip/nomado-node">Github</a> | <a href="https://www.npmjs.com/package/nomado">npm</a></p>
+
+<p>The easiest and recommended (read: smartest) way to use nomado REST API in your nodejs application is via our sdk.</p>
+
+<hr />
+
+<h2 id="installation">Installation</h2>
+
+<pre><code class="language-js">npm install nomado
+</code></pre>
+
+<hr />
+
+<h2 id="quickstart">Quickstart</h2>
+
+
+<div class="notices tip" ><p>If you do not have a nomado account, please <a href="https://my.nomado.eu/join">signup</a> and get <strong>free 10€ credit</strong> to continue.</p>
+</div>
+
+
+<p>Below is a quick example for initializing the library and sending a SMS.</p>
+
+<pre><code class="language-js">const nomadoClient = require('nomado');
+
+const USERNAME = 'username';
+const PASSWORD = 'password';
+
+const nomado = new nomadoClient({USERNAME, PASSWORD});
+
+const smsOptions = {
+  to: ['32456789012'],
+  message: 'Hello world',
+  unicode: false
+};
+
+nomado.sms.send(smsOptions)
+    .then((response) =&gt; {
+      console.log(response.code);
+      console.log(response.data);
+    })
+    .catch((error) =&gt; {
+      console.log(error.code);
+      console.log(error.reason);
+    });
+</code></pre>
+
+<h3 id="responses">Responses</h3>
+
+<p>Every call will return a promise that will be resolved (or rejected) with a nomadoResponse object wrapping the API response code and the data.</p>
+
+<pre><code class="language-javascript">// Result object:
+{
+  code: 200, //OK!
+  reason: &quot;&quot;, //in case of error
+  data: {}
+}
+</code></pre>
+
+<hr />
+
+<h3 id="authentication">Authentication</h3>
+
+<p>First, initialize the library with your nomado credentials.</p>
+
+<pre><code class="language-javascript">const nomado = new nomadoClient({USERNAME, PASSWORD});
+</code></pre>
+
+<p>Now, you can start sending requests to the API.</p>
+
+<h2 id="functions">Functions</h2>
+
+<p>The nomadoClient class provides the public interfaces to access the nomado API</p>
+
+<ul>
+<li><code>SMS</code></li>
+<li><code>OTP</code></li>
+<li><code>HLR</code></li>
+<li><code>Calls</code></li>
+<li><code>Account</code></li>
+</ul>
+
+<hr />
+
+<h3 id="sms">SMS</h3>
+
+<h5 id="sms-send">sms.send()</h5>
+
+<p>Send a SMS to one or multiple numbers.</p>
+
+<pre><code class="language-javascript">nomado.sms.send({
+  to: ['3245678901','3245678902'], // e164 formatted numberr in array
+  message: 'My first sms from nomado!', 
+  unicode: false // Boolean: unicode.
+});
+</code></pre>
+
+<hr />
+
+<h4 id="otp">OTP</h4>
+
+<h5 id="otp-send">otp.send()</h5>
+
+<p>Generating OTP code and sending via sms to your users is as easy as below:</p>
+
+<pre><code class="language-javascript">nomado.otp.send({
+      &quot;to&quot;: &quot;32412345678&quot;,
+      &quot;template&quot;: &quot;Your verification code is {{CODE}}&quot;,
+      &quot;type&quot;: &quot;NUMERIC&quot;,
+      &quot;length&quot;: 4,
+      &quot;expiry&quot;: 7200
+})
+</code></pre>
+
+<hr />
+
+<h5 id="otp-verify">otp.verify()</h5>
+
+<pre><code class="language-javascript">nomado.otp.verify({
+  number: '32456789012', // E164 formatted mobile number used,
+  token: '456789' // OTP generated in previous call. You do not need to store it locally.
+})
+</code></pre>
+
+<hr />
+
+<h3 id="hlr">HLR</h3>
+
+<h5 id="hlr-fetch">hlr.fetch()</h5>
+
+<p>Make a query</p>
+
+<pre><code class="language-javascript">nomado.hlr.fetch({
+  numbers: ['32456789012','32456789013'], // e164 formatted numbers
+});
+</code></pre>
+
+<hr />
+
+<h5 id="hlr-validate">hlr.validate()</h5>
+
+<pre><code class="language-javascript">nomado.hlr.validate({
+  number: '32456789012', // e164 formatted number
+});
+</code></pre>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/sdks/" title="SDKs"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/sdks/php-sdk/" title="PHP SDK" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1566522321"></script>
+    <script src="/js/perfect-scrollbar.min.js?1566522321"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1566522321"></script>
+    <script src="/js/jquery.sticky.js?1566522321"></script>
+    <script src="/js/featherlight.min.js?1566522321"></script>
+    <script src="/js/highlight.pack.js?1566522321"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1566522321"></script>
+    <script src="/js/learn.js?1566522321"></script>
+    <script src="/js/hugo-learn.js?1566522321"></script>
+
+    <link href="/mermaid/mermaid.css?1566522321" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1566522321"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

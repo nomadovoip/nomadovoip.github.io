@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on My English</title>
+    <link>https://developer.nomado.eu/getting-started/</link>
+    <description>Recent content in Getting Started on My English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Everything is mine</copyright>
+    
+	<atom:link href="https://developer.nomado.eu/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Base URL</title>
+      <link>https://developer.nomado.eu/getting-started/base-url/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/getting-started/base-url/</guid>
+      <description>nomado REST API is served with the following URL:
+https://api.nomado.eu   Use of SDK libraries are highly recommended so that you wont face any breaking changes in the future.
+ nomado REST API is served over HTTPS only to ensure data privacy, GDPR, PSD2, PCI and other compliances.</description>
+    </item>
+    
+    <item>
+      <title>Authentication</title>
+      <link>https://developer.nomado.eu/getting-started/authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/getting-started/authentication/</guid>
+      <description>All nomado REST API endpoints are protected with three authentication methods : User credentials, JSON Web Tokens and API Keys.
+We recommend to use JSON Web Tokens and API Keys.
+ User credentials User credential based authentication is the easiest of all to test and explore nomado REST API. User credentials should be provided with each request in Authorization header base64 encoded and separated by :.
+Example: If your username is myemail@myserver.</description>
+    </item>
+    
+  </channel>
+</rss>

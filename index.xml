@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on My English</title>
+    <link>https://developer.nomado.eu/</link>
+    <description>Recent content in Home on My English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Everything is mine</copyright>
+    <lastBuildDate>Thu, 22 Aug 2019 17:29:35 +0300</lastBuildDate>
+    
+	<atom:link href="https://developer.nomado.eu/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Base URL</title>
+      <link>https://developer.nomado.eu/getting-started/base-url/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/getting-started/base-url/</guid>
+      <description>nomado REST API is served with the following URL:
+https://api.nomado.eu   Use of SDK libraries are highly recommended so that you wont face any breaking changes in the future.
+ nomado REST API is served over HTTPS only to ensure data privacy, GDPR, PSD2, PCI and other compliances.</description>
+    </item>
+    
+    <item>
+      <title>Authentication</title>
+      <link>https://developer.nomado.eu/getting-started/authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/getting-started/authentication/</guid>
+      <description>All nomado REST API endpoints are protected with three authentication methods : User credentials, JSON Web Tokens and API Keys.
+We recommend to use JSON Web Tokens and API Keys.
+ User credentials User credential based authentication is the easiest of all to test and explore nomado REST API. User credentials should be provided with each request in Authorization header base64 encoded and separated by :.
+Example: If your username is myemail@myserver.</description>
+    </item>
+    
+    <item>
+      <title>Javascript SDK</title>
+      <link>https://developer.nomado.eu/sdks/javascript-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sdks/javascript-sdk/</guid>
+      <description>Github | npm
+The easiest and recommended (read: smartest) way to use nomado REST API in your nodejs application is via our sdk.
+Installation npm install nomado  Quickstart If you do not have a nomado account, please signup and get free 10€ credit to continue.
+ Below is a quick example for initializing the library and sending a SMS.
+const nomadoClient = require(&#39;nomado&#39;); const USERNAME = &#39;username&#39;; const PASSWORD = &#39;password&#39;; const nomado = new nomadoClient({USERNAME, PASSWORD}); const smsOptions = { to: [&#39;32456789012&#39;], message: &#39;Hello world&#39;, unicode: false }; nomado.</description>
+    </item>
+    
+    <item>
+      <title>PHP SDK</title>
+      <link>https://developer.nomado.eu/sdks/php-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sdks/php-sdk/</guid>
+      <description> Work in progress
+ PHP Core Work in progress
+ Laravel Work in progress
+ Compose Work in progress
+ </description>
+    </item>
+    
+    <item>
+      <title>Send SMS</title>
+      <link>https://developer.nomado.eu/messaging/php-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/messaging/php-sdk/</guid>
+      <description>Overview This endpoint allows you to send one or multiple sms at once to any country.
+API Endpoint POST `https://api.nomado.eu/sms/send`  Authentication You can choose one of the authentication methods referenced here.
+Message object The JSON object representing the SMS to send. Should be included in request body.
+   key description required default value     to array&amp;lt;string&amp;gt; Array ofE164formatted mobile numbers Yes    message string Your SMS message Yes    unicode boolean Indicates whether your message contains non-gsm characters No false    SMS messages are limited to 160 characters (70 if using unicode).</description>
+    </item>
+    
+    <item>
+      <title>Create OTP</title>
+      <link>https://developer.nomado.eu/otp/create-2fa-token/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/otp/create-2fa-token/</guid>
+      <description>This endpoint allows you to implement Two Factor Authentication the easy way, by sending a SMS with OTP.
+API Endpoint POST `https://api.nomado.eu/2fa/create`  Authentication You can choose one of the authentication methods referenced here.
+Body object The JSON object representing the OTP to send. Should be included in request body.
+   options description required default value     to string E164 formatted mobile number Yes    template string MUST contain {{CODE}} literal in it, which will be replaced by the generated OTP No {{CODE}}   type string Type of OTP required.</description>
+    </item>
+    
+    <item>
+      <title>Verify OTP</title>
+      <link>https://developer.nomado.eu/otp/verify-2fa-token/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/otp/verify-2fa-token/</guid>
+      <description>Overview OTP is useless if you cannot verify, isn&amp;rsquo;t it? Lets see how easy it is to verify the OTP. no local storage required!
+API Endpoint POST `https://api.nomado.eu/2fa/verify`  Authentication You can choose one of the authentication methods referenced here.
+Body object The JSON object representing the OTP to verify. Should be included in request body.
+   options description required default value     number string E164 formatted mobile number Yes    token string The OTP to verify Yes     Response    status code description     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    OTP as the name suggest, Once verified or expired, will be destroyed.</description>
+    </item>
+    
+    <item>
+      <title>Fetch</title>
+      <link>https://developer.nomado.eu/hlr/get-hlr-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/hlr/get-hlr-information/</guid>
+      <description>API Endpoint POST `https://api.nomado.eu/hlr`  Authentication You can choose one of the authentication methods referenced here.
+Body object The JSON object representing the numbers to lookup. Should be included in request body.
+   options description required default value     numbers array&amp;lt;string&amp;gt; Array of E164 formatted mobile numbers Yes     Response    status code description     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Request example Headers</description>
+    </item>
+    
+    <item>
+      <title>Free HLR Validation</title>
+      <link>https://developer.nomado.eu/hlr/get-free-hlr-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/hlr/get-free-hlr-information/</guid>
+      <description>Overview Not as robust as a hlr lookup, this endpoint allows you to fetch basic information regarding a phone number such as if its a valid phone number, a landline or mobile, country it belongs, etc. This lookup does not cost you anything.
+API Endpoint POST `https://api.nomado.eu/hlr/validate`  Authentication You can choose one of the authentication methods referenced here.
+Query URL Just append the number to the API endpoint url, such as https://api.</description>
+    </item>
+    
+  </channel>
+</rss>

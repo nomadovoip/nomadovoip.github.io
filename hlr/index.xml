@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HLR on My English</title>
+    <link>https://developer.nomado.eu/hlr/</link>
+    <description>Recent content in HLR on My English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Everything is mine</copyright>
+    
+	<atom:link href="https://developer.nomado.eu/hlr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fetch</title>
+      <link>https://developer.nomado.eu/hlr/get-hlr-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/hlr/get-hlr-information/</guid>
+      <description>API Endpoint POST `https://api.nomado.eu/hlr`  Authentication You can choose one of the authentication methods referenced here.
+Body object The JSON object representing the numbers to lookup. Should be included in request body.
+   options description required default value     numbers array&amp;lt;string&amp;gt; Array of E164 formatted mobile numbers Yes     Response    status code description     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Request example Headers</description>
+    </item>
+    
+    <item>
+      <title>Free HLR Validation</title>
+      <link>https://developer.nomado.eu/hlr/get-free-hlr-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/hlr/get-free-hlr-information/</guid>
+      <description>Overview Not as robust as a hlr lookup, this endpoint allows you to fetch basic information regarding a phone number such as if its a valid phone number, a landline or mobile, country it belongs, etc. This lookup does not cost you anything.
+API Endpoint POST `https://api.nomado.eu/hlr/validate`  Authentication You can choose one of the authentication methods referenced here.
+Query URL Just append the number to the API endpoint url, such as https://api.</description>
+    </item>
+    
+  </channel>
+</rss>

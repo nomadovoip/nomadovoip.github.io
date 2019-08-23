@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://developer.nomado.eu/fr/</loc>
+    <lastmod>2019-08-22T17:29:35+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/fr/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/fr/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/tags/"
+                />
+  </url>
+  
+</urlset>

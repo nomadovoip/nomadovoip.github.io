@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OTP on My English</title>
+    <link>https://developer.nomado.eu/otp/</link>
+    <description>Recent content in OTP on My English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Everything is mine</copyright>
+    
+	<atom:link href="https://developer.nomado.eu/otp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Create OTP</title>
+      <link>https://developer.nomado.eu/otp/create-2fa-token/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/otp/create-2fa-token/</guid>
+      <description>This endpoint allows you to implement Two Factor Authentication the easy way, by sending a SMS with OTP.
+API Endpoint POST `https://api.nomado.eu/2fa/create`  Authentication You can choose one of the authentication methods referenced here.
+Body object The JSON object representing the OTP to send. Should be included in request body.
+   options description required default value     to string E164 formatted mobile number Yes    template string MUST contain {{CODE}} literal in it, which will be replaced by the generated OTP No {{CODE}}   type string Type of OTP required.</description>
+    </item>
+    
+    <item>
+      <title>Verify OTP</title>
+      <link>https://developer.nomado.eu/otp/verify-2fa-token/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/otp/verify-2fa-token/</guid>
+      <description>Overview OTP is useless if you cannot verify, isn&amp;rsquo;t it? Lets see how easy it is to verify the OTP. no local storage required!
+API Endpoint POST `https://api.nomado.eu/2fa/verify`  Authentication You can choose one of the authentication methods referenced here.
+Body object The JSON object representing the OTP to verify. Should be included in request body.
+   options description required default value     number string E164 formatted mobile number Yes    token string The OTP to verify Yes     Response    status code description     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    OTP as the name suggest, Once verified or expired, will be destroyed.</description>
+    </item>
+    
+  </channel>
+</rss>

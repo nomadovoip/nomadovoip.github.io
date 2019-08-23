@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://developer.nomado.eu/getting-started/</loc>
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/getting-started/base-url/</loc>
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/getting-started/authentication/</loc>
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/sdks/</loc>
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/sdks/javascript-sdk/</loc>
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/sdks/php-sdk/</loc>
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/messaging/</loc>
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/messaging/php-sdk/</loc>
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/otp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/otp/create-2fa-token/</loc>
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/otp/verify-2fa-token/</loc>
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/hlr/</loc>
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/hlr/get-hlr-information/</loc>
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/hlr/get-free-hlr-information/</loc>
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/</loc>
+    <lastmod>2019-08-22T17:29:35+03:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://developer.nomado.eu/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://developer.nomado.eu/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://developer.nomado.eu/tags/"
+                />
+  </url>
+  
+</urlset>
