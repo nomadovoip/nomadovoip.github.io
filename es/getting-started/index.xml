@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on nomado API | Send sms | Place call | OTP | 2FA</title>
+    <link>https://developer.nomado.eu/es/getting-started/</link>
+    <description>Recent content in Getting Started on nomado API | Send sms | Place call | OTP | 2FA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Everything is mine</copyright>
+    
+	<atom:link href="https://developer.nomado.eu/es/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>URL Base</title>
+      <link>https://developer.nomado.eu/es/getting-started/url-base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/es/getting-started/url-base/</guid>
+      <description>La llamada a la API REST de nomado se realiza en la siguiente URL:
+https://api.nomado.eu  Se recomienda encarecidamente el uso de las librerías SDK para que no tenga que enfrentarse a cambios que afecten a su funcionamiento en el futuro.
+ La API REST de nomado sólo se sirve a través de HTTPS para garantizar la privacidad de los datos, GDPR, PSD2, PCI y otras regulaciones.</description>
+    </item>
+    
+    <item>
+      <title>Autentificación</title>
+      <link>https://developer.nomado.eu/es/getting-started/autentificacion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/es/getting-started/autentificacion/</guid>
+      <description>Todos los puntos finales de la API REST de nomado están protegidos con tres métodos de autentificación: Credenciales de usuario, JSON Web Tokens y Claves API (API Keys).
+Recomendamos el uso de JSON Web Tokens y Claves API.
+ Credenciales de usuario La autentificación basada en credenciales de usuario es la más fácil de todas para probar y explorar la API REST de nomado. Las credenciales de usuario deben proporcionarse con cada solicitud en el encabezado Authorization, codificadas en base64, y separadas por :.</description>
+    </item>
+    
+  </channel>
+</rss>

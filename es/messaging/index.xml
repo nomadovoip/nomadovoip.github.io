@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Messaging on nomado API | Send sms | Place call | OTP | 2FA</title>
+    <link>https://developer.nomado.eu/es/messaging/</link>
+    <description>Recent content in Messaging on nomado API | Send sms | Place call | OTP | 2FA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Everything is mine</copyright>
+    
+	<atom:link href="https://developer.nomado.eu/es/messaging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Send SMS</title>
+      <link>https://developer.nomado.eu/es/messaging/send-sms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/es/messaging/send-sms/</guid>
+      <description>Este punto final le permite enviar uno o varios sms a la vez a cualquier país.
+Punto final de la API POST `https://api.nomado.eu/sms/send`  Autentificación Puede elegir uno de los métodos de autentificación a los que se hace referencia aquí.
+Objeto Mensaje El objeto JSON que representa el SMS a enviar. Debe ser incluido en el cuerpo de la solicitud (request).
+   clave descripción requerido valor por defecto     to array&amp;lt;string&amp;gt; Array ofE164formatted mobile numbers Oui    message string Your SMS message Oui    unicode boolean Indicates whether your message contains non-gsm characters Non false    Los mensajes SMS tienen un límite de 160 caracteres (70 si se utiliza unicode).</description>
+    </item>
+    
+  </channel>
+</rss>

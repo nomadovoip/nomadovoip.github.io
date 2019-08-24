@@ -1,0 +1,11 @@
+User-agent: *
+
+# Sitemap files
+Sitemap: https://developer.nomado.eu/sitemap.xml
+
+
+allow: /sv/categories/
+
+allow: /sv/
+
+allow: /sv/tags/

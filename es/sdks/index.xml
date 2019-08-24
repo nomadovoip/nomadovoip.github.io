@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SDKs on nomado API | Send sms | Place call | OTP | 2FA</title>
+    <link>https://developer.nomado.eu/es/sdks/</link>
+    <description>Recent content in SDKs on nomado API | Send sms | Place call | OTP | 2FA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Everything is mine</copyright>
+    
+	<atom:link href="https://developer.nomado.eu/es/sdks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>El SDK para Javascript</title>
+      <link>https://developer.nomado.eu/es/sdks/javascript-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/es/sdks/javascript-sdk/</guid>
+      <description>Github | npm
+La forma recomendada y más fácil (léase: más inteligente) de utilizar la API REST de nomado en su aplicación nodejs es a través de nuestro sdk (kit de desarrollo de software).
+Instalación npm install nomado  Inicio rápido Si no dispone de una cuenta nomado, por favor, regístrese y obtenga 10€ de crédito gratis para continuar.
+ A continuación se muestra un ejemplo rápido para inicializar la biblioteca y enviar un SMS.</description>
+    </item>
+    
+    <item>
+      <title>PHP SDK</title>
+      <link>https://developer.nomado.eu/es/sdks/php-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/es/sdks/php-sdk/</guid>
+      <description> Estamos trabajando en ello
+ PHP Core Estamos trabajando en ello
+ Laravel Estamos trabajando en ello
+ Compose Estamos trabajando en ello
+ </description>
+    </item>
+    
+    <item>
+      <title>Python SDK</title>
+      <link>https://developer.nomado.eu/es/sdks/python-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/es/sdks/python-sdk/</guid>
+      <description> Work in progress
+ </description>
+    </item>
+    
+  </channel>
+</rss>

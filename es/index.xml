@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on nomado API | Send sms | Place call | OTP | 2FA</title>
+    <link>https://developer.nomado.eu/es/</link>
+    <description>Recent content in Home on nomado API | Send sms | Place call | OTP | 2FA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Everything is mine</copyright>
+    <lastBuildDate>Thu, 22 Aug 2019 17:29:35 +0300</lastBuildDate>
+    
+	<atom:link href="https://developer.nomado.eu/es/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>URL Base</title>
+      <link>https://developer.nomado.eu/es/getting-started/url-base/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/es/getting-started/url-base/</guid>
+      <description>La llamada a la API REST de nomado se realiza en la siguiente URL:
+https://api.nomado.eu  Se recomienda encarecidamente el uso de las librerías SDK para que no tenga que enfrentarse a cambios que afecten a su funcionamiento en el futuro.
+ La API REST de nomado sólo se sirve a través de HTTPS para garantizar la privacidad de los datos, GDPR, PSD2, PCI y otras regulaciones.</description>
+    </item>
+    
+    <item>
+      <title>Autentificación</title>
+      <link>https://developer.nomado.eu/es/getting-started/autentificacion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/es/getting-started/autentificacion/</guid>
+      <description>Todos los puntos finales de la API REST de nomado están protegidos con tres métodos de autentificación: Credenciales de usuario, JSON Web Tokens y Claves API (API Keys).
+Recomendamos el uso de JSON Web Tokens y Claves API.
+ Credenciales de usuario La autentificación basada en credenciales de usuario es la más fácil de todas para probar y explorar la API REST de nomado. Las credenciales de usuario deben proporcionarse con cada solicitud en el encabezado Authorization, codificadas en base64, y separadas por :.</description>
+    </item>
+    
+    <item>
+      <title>El SDK para Javascript</title>
+      <link>https://developer.nomado.eu/es/sdks/javascript-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/es/sdks/javascript-sdk/</guid>
+      <description>Github | npm
+La forma recomendada y más fácil (léase: más inteligente) de utilizar la API REST de nomado en su aplicación nodejs es a través de nuestro sdk (kit de desarrollo de software).
+Instalación npm install nomado  Inicio rápido Si no dispone de una cuenta nomado, por favor, regístrese y obtenga 10€ de crédito gratis para continuar.
+ A continuación se muestra un ejemplo rápido para inicializar la biblioteca y enviar un SMS.</description>
+    </item>
+    
+    <item>
+      <title>PHP SDK</title>
+      <link>https://developer.nomado.eu/es/sdks/php-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/es/sdks/php-sdk/</guid>
+      <description> Estamos trabajando en ello
+ PHP Core Estamos trabajando en ello
+ Laravel Estamos trabajando en ello
+ Compose Estamos trabajando en ello
+ </description>
+    </item>
+    
+    <item>
+      <title>Python SDK</title>
+      <link>https://developer.nomado.eu/es/sdks/python-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/es/sdks/python-sdk/</guid>
+      <description> Work in progress
+ </description>
+    </item>
+    
+    <item>
+      <title>Send SMS</title>
+      <link>https://developer.nomado.eu/es/messaging/send-sms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/es/messaging/send-sms/</guid>
+      <description>Este punto final le permite enviar uno o varios sms a la vez a cualquier país.
+Punto final de la API POST `https://api.nomado.eu/sms/send`  Autentificación Puede elegir uno de los métodos de autentificación a los que se hace referencia aquí.
+Objeto Mensaje El objeto JSON que representa el SMS a enviar. Debe ser incluido en el cuerpo de la solicitud (request).
+   clave descripción requerido valor por defecto     to array&amp;lt;string&amp;gt; Array ofE164formatted mobile numbers Oui    message string Your SMS message Oui    unicode boolean Indicates whether your message contains non-gsm characters Non false    Los mensajes SMS tienen un límite de 160 caracteres (70 si se utiliza unicode).</description>
+    </item>
+    
+    <item>
+      <title>Create OTP</title>
+      <link>https://developer.nomado.eu/es/otp/create-2fa-token/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/es/otp/create-2fa-token/</guid>
+      <description>Este punto final le permite implementar la Autentificación de Doble Factor de la manera fácil, enviando un SMS con OTP.
+Punto final de la API POST `https://api.nomado.eu/2fa/create`  Autentificación Puede elegir uno de los métodos de autentificación a los que se hace referencia aquí.
+Objeto body Es el objeto JSON que representa el OTP a enviar. Debe incluirse en el cuerpo de la solicitud.
+   opciones descripción requerido valor por defecto     to string E164 formatted mobile number Si    template string MUST contain {{CODE}} literal in it, which will be replaced by the generated OTP Non {{CODE}   type string Type of OTP required.</description>
+    </item>
+    
+    <item>
+      <title>Verify OTP</title>
+      <link>https://developer.nomado.eu/es/otp/verify-2fa-token/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/es/otp/verify-2fa-token/</guid>
+      <description>Descripción general El OTP es inútil si no se puede verificar, ¿no? Veamos lo fácil que es verificar el OTP. ¡No requiere almacenamiento local!
+Punto final de la API POST `https://api.nomado.eu/2fa/verify`  Autentificación Puede elegir uno de los métodos de autentificación a los que se hace referencia aquí.
+Objeto body Es el objeto JSON que representa el OTP para verificar. Debe incluirse en el cuerpo de la solicitud.
+   opciones descripción requerido valor por defecto     number string E164 formatted mobile number Oui    token string The OTP to verify Oui     Respuesta    código de estado descripción     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    !</description>
+    </item>
+    
+    <item>
+      <title>Fetch</title>
+      <link>https://developer.nomado.eu/es/hlr/get-hlr-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/es/hlr/get-hlr-information/</guid>
+      <description>Punto final de la API POST `https://api.nomado.eu/hlr`  Autentificación Puede elegir uno de los métodos de autentificación a los que se hace referencia aquí.
+Objeto body El objeto JSON que representa los números a buscar. Debe incluirse en el cuerpo de la solicitud.
+   opciones descripción requerido valor por defecto     numbers array&amp;lt;string&amp;gt; tableau des numéros mobiles formatés E164 Si     Respuesta    código de estado descripción     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Ejemplo de solicitud Cabeceras</description>
+    </item>
+    
+    <item>
+      <title>Free HLR Validation</title>
+      <link>https://developer.nomado.eu/es/hlr/get-free-hlr-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/es/hlr/get-free-hlr-information/</guid>
+      <description>Descripción general No tan robusto como una búsqueda hlr, este punto final le permite obtener información básica sobre un número de teléfono, como por ejemplo si es un número de teléfono válido, un teléfono fijo o móvil, el país al que pertenece, etc. Esta búsqueda no le cuesta nada.
+Punto final de la API POST `https://api.nomado.eu/hlr/validate`  Autentificación Puede elegir uno de los métodos de autentificación a los que se hace referencia aquí.</description>
+    </item>
+    
+  </channel>
+</rss>

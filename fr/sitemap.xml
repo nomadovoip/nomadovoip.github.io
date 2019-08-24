@@ -11,6 +11,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/getting-started/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr"
                 href="https://developer.nomado.eu/fr/getting-started/"
                 />
@@ -22,6 +27,11 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://developer.nomado.eu/getting-started/base-url/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/getting-started/url-base/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -39,6 +49,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/getting-started/autentificacion/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr"
                 href="https://developer.nomado.eu/fr/getting-started/authentification/"
                 />
@@ -50,6 +65,11 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://developer.nomado.eu/sdks/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/sdks/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -67,6 +87,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/sdks/javascript-sdk/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr"
                 href="https://developer.nomado.eu/fr/sdks/javascript-sdk/"
                 />
@@ -78,6 +103,11 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://developer.nomado.eu/sdks/php-sdk/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/sdks/php-sdk/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -95,6 +125,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/sdks/python-sdk/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr"
                 href="https://developer.nomado.eu/fr/sdks/python-sdk/"
                 />
@@ -109,6 +144,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/messaging/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr"
                 href="https://developer.nomado.eu/fr/messaging/"
                 />
@@ -119,7 +159,12 @@
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://developer.nomado.eu/messaging/php-sdk/"
+                href="https://developer.nomado.eu/messaging/send-sms/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/messaging/send-sms/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -137,6 +182,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/otp/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr"
                 href="https://developer.nomado.eu/fr/otp/"
                 />
@@ -148,6 +198,11 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://developer.nomado.eu/otp/create-2fa-token/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/otp/create-2fa-token/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -165,6 +220,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/otp/verify-2fa-token/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr"
                 href="https://developer.nomado.eu/fr/otp/verify-2fa-token/"
                 />
@@ -176,6 +236,11 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://developer.nomado.eu/hlr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/hlr/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -193,6 +258,11 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/hlr/get-hlr-information/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr"
                 href="https://developer.nomado.eu/fr/hlr/get-hlr-information/"
                 />
@@ -204,6 +274,11 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://developer.nomado.eu/hlr/get-free-hlr-information/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/hlr/get-free-hlr-information/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -222,6 +297,16 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://developer.nomado.eu/sv/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr"
                 href="https://developer.nomado.eu/fr/"
                 />
@@ -236,6 +321,16 @@
                 />
     <xhtml:link
                 rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://developer.nomado.eu/sv/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
                 hreflang="fr"
                 href="https://developer.nomado.eu/fr/categories/"
                 />
@@ -247,6 +342,16 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://developer.nomado.eu/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://developer.nomado.eu/es/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="sv"
+                href="https://developer.nomado.eu/sv/tags/"
                 />
     <xhtml:link
                 rel="alternate"

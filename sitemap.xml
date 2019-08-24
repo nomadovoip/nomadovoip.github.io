@@ -11,4 +11,14 @@
 		
 	</sitemap>
 	
+	<sitemap>
+	   	<loc>https://developer.nomado.eu/es/sitemap.xml</loc>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://developer.nomado.eu/sv/sitemap.xml</loc>
+		
+	</sitemap>
+	
 </sitemapindex>

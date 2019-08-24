@@ -1,0 +1,127 @@
+[
+{
+	"uri": "https://developer.nomado.eu/es/getting-started/",
+	"title": "Getting Started",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 1 Getting Started Discover what your nomado API is all about and the core-concepts behind it.\n"
+},
+{
+	"uri": "https://developer.nomado.eu/es/getting-started/url-base/",
+	"title": "URL Base",
+	"tags": [],
+	"description": "",
+	"content": "La llamada a la API REST de nomado se realiza en la siguiente URL:\nhttps://api.nomado.eu  Se recomienda encarecidamente el uso de las librerías SDK para que no tenga que enfrentarse a cambios que afecten a su funcionamiento en el futuro.\n La API REST de nomado sólo se sirve a través de HTTPS para garantizar la privacidad de los datos, GDPR, PSD2, PCI y otras regulaciones.\n"
+},
+{
+	"uri": "https://developer.nomado.eu/es/getting-started/autentificacion/",
+	"title": "Autentificación",
+	"tags": [],
+	"description": "",
+	"content": " Todos los puntos finales de la API REST de nomado están protegidos con tres métodos de autentificación: Credenciales de usuario, JSON Web Tokens y Claves API (API Keys).\nRecomendamos el uso de JSON Web Tokens y Claves API.\n Credenciales de usuario La autentificación basada en credenciales de usuario es la más fácil de todas para probar y explorar la API REST de nomado. Las credenciales de usuario deben proporcionarse con cada solicitud en el encabezado Authorization, codificadas en base64, y separadas por :.\nEjemplo: Si su username (nombre de usuario) es myemail@myserver.com y su password (contraseña) es 123456, su valor en base64 (username:password) será: bXllbWFpbEBteXNlcnZlci5jb206MTIzNDU2\ncurl -X POST \\ https://api.nomado.eu \\ -H 'Authorization: BASIC bXllbWFpbEBteXNlcnZlci5jb206MTIzNDU2' //Base64 encoding for myemail@myserver.com:123456  Para los otros métodos, estamos trabajando en ello.\n "
+},
+{
+	"uri": "https://developer.nomado.eu/es/sdks/",
+	"title": "SDKs",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 2 SDKs Complementing nomado API and reducing your efforts required to integrate communications; carefully crafted to keep your peace and excitement in mind, these are SDKs for you.\n"
+},
+{
+	"uri": "https://developer.nomado.eu/es/sdks/javascript-sdk/",
+	"title": "El SDK para Javascript",
+	"tags": [],
+	"description": "",
+	"content": " Github | npm\nLa forma recomendada y más fácil (léase: más inteligente) de utilizar la API REST de nomado en su aplicación nodejs es a través de nuestro sdk (kit de desarrollo de software).\nInstalación npm install nomado  Inicio rápido Si no dispone de una cuenta nomado, por favor, regístrese y obtenga 10€ de crédito gratis para continuar.\n A continuación se muestra un ejemplo rápido para inicializar la biblioteca y enviar un SMS.\nconst nomadoClient = require('nomado'); const USERNAME = 'username'; const PASSWORD = 'password'; const nomado = new nomadoClient({USERNAME, PASSWORD}); const smsOptions = { to: ['32456789012'], message: 'Hello world', unicode: false }; nomado.sms.send(smsOptions) .then((response) =\u0026gt; { console.log(response.code); console.log(response.data); }) .catch((error) =\u0026gt; { console.log(error.code); console.log(error.reason); });  Respuestas Cada llamada devolverá una promesa (promise) que será resuelta (o rechazada) con un objeto nomadoResponse que envuelve el código de respuesta de la API y los datos.\n// Result object: { code: 200, //OK! reason: \u0026quot;\u0026quot;, //in case of error data: {} }  Autentificación Primero, inicialice la biblioteca con sus credenciales de nomado.\nconst nomado = new nomadoClient({USERNAME, PASSWORD});  Ahora ya puede empezar a enviar solicitudes a la API.\nFunciones La clase nomadoClient proporciona las interfaces públicas para acceder a la API de nomado\n SMS OTP HLR Calls Account  SMS sms.send() Envía un SMS a uno o varios números.\nnomado.sms.send({ to: ['3245678901','3245678902'], // e164 formatted numberr in array message: 'My first sms from nomado!', unicode: false // Boolean: unicode. });  OTP otp.send() Generar un código OTP y enviarlo vía sms a sus usuarios es tan fácil como se muestra a continuación:\nnomado.otp.send({ \u0026quot;to\u0026quot;: \u0026quot;32412345678\u0026quot;, \u0026quot;template\u0026quot;: \u0026quot;Your verification code is {{CODE}}\u0026quot;, \u0026quot;type\u0026quot;: \u0026quot;NUMERIC\u0026quot;, \u0026quot;length\u0026quot;: 4, \u0026quot;expiry\u0026quot;: 7200 })  otp.verify() nomado.otp.verify({ number: '32456789012', // E164 formatted mobile number used, token: '456789' // OTP generated in previous call. You do not need to store it locally. })  HLR hlr.fetch() Realizar una solicitud\nnomado.hlr.fetch({ numbers: ['32456789012','32456789013'], // e164 formatted numbers });  hlr.validate() nomado.hlr.validate({ number: '32456789012', // e164 formatted number });  "
+},
+{
+	"uri": "https://developer.nomado.eu/es/sdks/php-sdk/",
+	"title": "PHP SDK",
+	"tags": [],
+	"description": "",
+	"content": " Estamos trabajando en ello\n PHP Core Estamos trabajando en ello\n Laravel Estamos trabajando en ello\n Compose Estamos trabajando en ello\n "
+},
+{
+	"uri": "https://developer.nomado.eu/es/sdks/python-sdk/",
+	"title": "Python SDK",
+	"tags": [],
+	"description": "",
+	"content": " Work in progress\n "
+},
+{
+	"uri": "https://developer.nomado.eu/es/messaging/",
+	"title": "Messaging",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 3 Messaging Este punto final le permite enviar uno o varios sms a la vez a cualquier país.\n"
+},
+{
+	"uri": "https://developer.nomado.eu/es/messaging/send-sms/",
+	"title": "Send SMS",
+	"tags": [],
+	"description": "",
+	"content": " Este punto final le permite enviar uno o varios sms a la vez a cualquier país.\nPunto final de la API POST `https://api.nomado.eu/sms/send`  Autentificación Puede elegir uno de los métodos de autentificación a los que se hace referencia aquí.\nObjeto Mensaje El objeto JSON que representa el SMS a enviar. Debe ser incluido en el cuerpo de la solicitud (request).\n   clave descripción requerido valor por defecto     to array\u0026lt;string\u0026gt; Array ofE164formatted mobile numbers Oui    message string Your SMS message Oui    unicode boolean Indicates whether your message contains non-gsm characters Non false    Los mensajes SMS tienen un límite de 160 caracteres (70 si se utiliza unicode). Si el tamaño excede el límite, los mensajes se dividirán y se facturarán por separado.\n Respuesta    código de estado descripción     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Ejemplo de solicitud Cabeceras\nContent-type: application/json Authorization: BASIC base64encodedCredentials  Cuerpo\n{ \u0026quot;to\u0026quot;: [\u0026quot;32412345678\u0026quot;,\u0026quot;32423456789\u0026quot;], \u0026quot;message\u0026quot;: \u0026quot;Hello world\u0026quot;, \u0026quot;unicode\u0026quot;: false }  Ejemplo de respuesta { \u0026quot;code\u0026quot;: 200, \u0026quot;message\u0026quot;: \u0026quot;OK\u0026quot;, \u0026quot;total_sms\u0026quot;: 2, \u0026quot;valid_numbers\u0026quot;: 2, \u0026quot;data\u0026quot;: { \u0026quot;callerID\u0026quot;: \u0026quot;NOMADO\u0026quot;, \u0026quot;text\u0026quot;: \u0026quot;Hello world\u0026quot;, \u0026quot;unicode\u0026quot;: 0, \u0026quot;32412345678\u0026quot;: { \u0026quot;code\u0026quot;: 200, \u0026quot;status\u0026quot;: \u0026quot;SENT\u0026quot; }, \u0026quot;32423456789\u0026quot;: { \u0026quot;code\u0026quot;: 200, \u0026quot;status\u0026quot;: \u0026quot;SENT\u0026quot; } }, \u0026quot;cost\u0026quot;: 0.20, \u0026quot;currency\u0026quot;: \u0026quot;EUR\u0026quot; }  "
+},
+{
+	"uri": "https://developer.nomado.eu/es/otp/",
+	"title": "OTP",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 4 OTP OTP es la abreviatura de One time password / pin. La configuración de OTP desde cero es engorrosa y requiere algunas tareas como generar un pin aleatorio, almacenarlo para su verificación (incluyendo configurar la base de datos), enviar el token a través de sms, crear puntos finales para la verificación posterior, etc. Esta función le permite saltarse todos los problemas y utilizar nuestro OTP como servicio de forma gratuita (se aplica el cargo normal por sms).\n"
+},
+{
+	"uri": "https://developer.nomado.eu/es/otp/create-2fa-token/",
+	"title": "Create OTP",
+	"tags": [],
+	"description": "",
+	"content": " Este punto final le permite implementar la Autentificación de Doble Factor de la manera fácil, enviando un SMS con OTP.\nPunto final de la API POST `https://api.nomado.eu/2fa/create`  Autentificación Puede elegir uno de los métodos de autentificación a los que se hace referencia aquí.\nObjeto body Es el objeto JSON que representa el OTP a enviar. Debe incluirse en el cuerpo de la solicitud.\n   opciones descripción requerido valor por defecto     to string E164 formatted mobile number Si    template string MUST contain {{CODE}} literal in it, which will be replaced by the generated OTP Non {{CODE}   type string Type of OTP required. Possible values: ALPHA, NUMERIC and ALPHANUMERIC No ALPHANUMERIC   length Integer length of the OTP required. Max 20 No 4   expiry Integer time in seconds after which the OTP will expire automatically. No 7200    Respuesta    código de estado descripción     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Ejemplo de solicitud Cabeceras\nContent-type: application/json Authorization: BASIC base64encodedCredentials  Cuerpo\n{ \u0026quot;to\u0026quot;: \u0026quot;32412345678\u0026quot;, \u0026quot;template\u0026quot;: \u0026quot;Your verification code is {{CODE}}\u0026quot;, \u0026quot;type\u0026quot;: \u0026quot;NUMERIC\u0026quot;, \u0026quot;length\u0026quot;: 4, \u0026quot;expiry\u0026quot;: 7200 }  Ejemplo de respuesta { \u0026quot;code\u0026quot;: 200, \u0026quot;message\u0026quot;: \u0026quot;OK\u0026quot;, \u0026quot;data\u0026quot;: { \u0026quot;32412345678\u0026quot;: { \u0026quot;code\u0026quot;: 200, \u0026quot;status\u0026quot;: \u0026quot;SENT\u0026quot; }, \u0026quot;text\u0026quot;: \u0026quot;Your verification code is 1234\u0026quot;, \u0026quot;token\u0026quot;: \u0026quot;1234\u0026quot;, \u0026quot;expiry\u0026quot;: 7200, \u0026quot;total_messages\u0026quot;: 1 } }  "
+},
+{
+	"uri": "https://developer.nomado.eu/es/otp/verify-2fa-token/",
+	"title": "Verify OTP",
+	"tags": [],
+	"description": "",
+	"content": " Descripción general El OTP es inútil si no se puede verificar, ¿no? Veamos lo fácil que es verificar el OTP. ¡No requiere almacenamiento local!\nPunto final de la API POST `https://api.nomado.eu/2fa/verify`  Autentificación Puede elegir uno de los métodos de autentificación a los que se hace referencia aquí.\nObjeto body Es el objeto JSON que representa el OTP para verificar. Debe incluirse en el cuerpo de la solicitud.\n   opciones descripción requerido valor por defecto     number string E164 formatted mobile number Oui    token string The OTP to verify Oui     Respuesta    código de estado descripción     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    !\u0026gt; El OTP como su nombre sugiere, una vez verificado o caducado, será destruido.\nEjemplo de solicitud Cabeceras\nContent-type: application/json Authorization: BASIC base64encodedCredentials  Cuerpo\n{ \u0026quot;number\u0026quot;: \u0026quot;32412345678\u0026quot;, \u0026quot;token\u0026quot;: \u0026quot;1234\u0026quot; }  Ejemplo de respuesta { \u0026quot;code\u0026quot;: 200, \u0026quot;message\u0026quot;: \u0026quot;OK\u0026quot;, \u0026quot;verify\u0026quot;: true }  "
+},
+{
+	"uri": "https://developer.nomado.eu/es/hlr/",
+	"title": "HLR",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 5 HLR El Home Location Register o HLR, es una base de datos de todos los teléfonos móviles de este planeta conectados a su red móvil particular. HLR Lookup le permite encontrar información importante sobre un número, como la red original, la red actual, el estado de roaming, la validación de números, el estado actual, etc.\n"
+},
+{
+	"uri": "https://developer.nomado.eu/es/hlr/get-hlr-information/",
+	"title": "Fetch",
+	"tags": [],
+	"description": "",
+	"content": " Punto final de la API POST `https://api.nomado.eu/hlr`  Autentificación Puede elegir uno de los métodos de autentificación a los que se hace referencia aquí.\nObjeto body El objeto JSON que representa los números a buscar. Debe incluirse en el cuerpo de la solicitud.\n   opciones descripción requerido valor por defecto     numbers array\u0026lt;string\u0026gt; tableau des numéros mobiles formatés E164 Si     Respuesta    código de estado descripción     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Ejemplo de solicitud Cabeceras\nContent-type: application/json Authorization: BASIC base64encodedCredentials  Cuerpo\n{ \u0026quot;numbers\u0026quot;: [\u0026quot;32412345678\u0026quot;,\u0026quot;32423456789\u0026quot;] }  Ejemplo de respuesta { \u0026quot;code\u0026quot;: 200, \u0026quot;data\u0026quot;: { \u0026quot;3245678901\u0026quot;: { ... }, \u0026quot;3245678902\u0026quot;: { ... }, \u0026quot;valid_numbers\u0026quot;: 2 }, \u0026quot;cost\u0026quot;: 0.05 }  "
+},
+{
+	"uri": "https://developer.nomado.eu/es/hlr/get-free-hlr-information/",
+	"title": "Free HLR Validation",
+	"tags": [],
+	"description": "",
+	"content": " Descripción general No tan robusto como una búsqueda hlr, este punto final le permite obtener información básica sobre un número de teléfono, como por ejemplo si es un número de teléfono válido, un teléfono fijo o móvil, el país al que pertenece, etc. Esta búsqueda no le cuesta nada.\nPunto final de la API POST `https://api.nomado.eu/hlr/validate`  Autentificación Puede elegir uno de los métodos de autentificación a los que se hace referencia aquí.\nURL para la petición Sólo tiene que añadir el número a la URL del punto final de la API, como por ejemplo https://api.nomado.eu/hlr/validate/[NÚMERO] donde [NÚMERO] se reemplazará por el número real de móvil/celular en formato E164.\nRespuesta    código de estado descripción     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Ejemplo de solicitud Cabeceras\nContent-type: application/json Authorization: BASIC base64encodedCredentials  URL para la petición https://api.nomado.eu/hlr/validate/32456789012\nEjemplo de respuesta { \u0026quot;Status\u0026quot;: \u0026quot;Valid\u0026quot;, \u0026quot;Region\u0026quot;: \u0026quot;BE\u0026quot;, \u0026quot;CountryCode\u0026quot;: 32, \u0026quot;Type\u0026quot;: \u0026quot;Mobile\u0026quot; }  "
+},
+{
+	"uri": "https://developer.nomado.eu/es/",
+	"title": "Home",
+	"tags": [],
+	"description": "",
+	"content": " Introdución La API REST de nomado permite el envío de sms, pin de un solo uso (OTP, One Time Pin), realizar y recibir llamadas, la integración con CRM, etc. de forma fácil. No sólo inteligente, sino también fácil es nuestro lema. Proporcionamos la documentación, SDKs, fragmentos de código y el apoyo que va a necesitar en su proyecto.\n¿Hemos mencionado que nomado es la única empresa que ofrece soporte de chat en vivo con desarrolladores reales dispuestos para ayudarle? ¡Le cubrimos las espaldas!\nSi no dispone de una cuenta nomado, por favor, regístrese y obtenga 10€ de crédito gratis para continuar.\n "
+},
+{
+	"uri": "https://developer.nomado.eu/es/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://developer.nomado.eu/es/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

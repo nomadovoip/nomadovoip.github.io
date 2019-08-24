@@ -12,10 +12,10 @@
     
     <item>
       <title>Send SMS</title>
-      <link>https://developer.nomado.eu/messaging/php-sdk/</link>
+      <link>https://developer.nomado.eu/messaging/send-sms/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://developer.nomado.eu/messaging/php-sdk/</guid>
+      <guid>https://developer.nomado.eu/messaging/send-sms/</guid>
       <description>Overview This endpoint allows you to send one or multiple sms at once to any country.
 API Endpoint POST `https://api.nomado.eu/sms/send`  Authentication You can choose one of the authentication methods referenced here.
 Message object The JSON object representing the SMS to send. Should be included in request body.

@@ -20,7 +20,7 @@ allow: /sdks/python-sdk/
 
 allow: /messaging/
 
-allow: /messaging/php-sdk/
+allow: /messaging/send-sms/
 
 allow: /otp/
 
