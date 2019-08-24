@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on nomado API | Send sms | Place call | OTP | 2FA</title>
+    <link>https://developer.nomado.eu/sv/getting-started/</link>
+    <description>Recent content in Getting Started on nomado API | Send sms | Place call | OTP | 2FA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Everything is mine</copyright>
+    
+	<atom:link href="https://developer.nomado.eu/sv/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Base URL</title>
+      <link>https://developer.nomado.eu/sv/getting-started/base-url/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/getting-started/base-url/</guid>
+      <description>nomado REST API är servad med följande URL:
+https://api.nomado.eu  Att använda SDK-bibliotek är att rekommendera, så att ni slipper möta framtida mjukvaruproblem.
+ nomado REST API är servad enbart över HTTPS, för att försäkra dataintegritet, GDPR, PSD2, PCI och andra uppfyllelser.</description>
+    </item>
+    
+    <item>
+      <title>Autentisering</title>
+      <link>https://developer.nomado.eu/sv/getting-started/autentisering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/getting-started/autentisering/</guid>
+      <description>Alla nomado REST API-slutpunkter skyddas med tre autentiseringsmetoder: användaruppgifter, JSON Web Tokens och API Keys.
+Vi rekommenderar att använda JSON Web Tokens och API Keys.
+ Användaruppgifter Autentisering med användaruppgifter är enklast när ni vill testa och utforska nomado REST API. Användaruppgifter bör tillhandahållas med varje request under headern Authorization som är base64-kodad och separerad med :.
+Exempel: Om ert användarnamn är myemail@myserver.com och ert lösenord är 123456, så blir base64(användarnamn:lösenord) value: bXllbWFpbEBteXNlcnZlci5jb206MTIzNDU2</description>
+    </item>
+    
+  </channel>
+</rss>

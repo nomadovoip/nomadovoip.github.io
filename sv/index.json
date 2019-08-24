@@ -1,14 +1,119 @@
 [
 {
-	"uri": "https://developer.nomado.eu/sv/categories/",
-	"title": "Categories",
+	"uri": "https://developer.nomado.eu/sv/getting-started/",
+	"title": "Getting Started",
 	"tags": [],
 	"description": "",
-	"content": ""
+	"content": " Chapter 1 Getting Started Discover what your nomado API is all about and the core-concepts behind it.\n"
+},
+{
+	"uri": "https://developer.nomado.eu/sv/getting-started/base-url/",
+	"title": "Base URL",
+	"tags": [],
+	"description": "",
+	"content": "nomado REST API är servad med följande URL:\nhttps://api.nomado.eu  Att använda SDK-bibliotek är att rekommendera, så att ni slipper möta framtida mjukvaruproblem.\n nomado REST API är servad enbart över HTTPS, för att försäkra dataintegritet, GDPR, PSD2, PCI och andra uppfyllelser.\n"
+},
+{
+	"uri": "https://developer.nomado.eu/sv/getting-started/autentisering/",
+	"title": "Autentisering",
+	"tags": [],
+	"description": "",
+	"content": " Alla nomado REST API-slutpunkter skyddas med tre autentiseringsmetoder: användaruppgifter, JSON Web Tokens och API Keys.\nVi rekommenderar att använda JSON Web Tokens och API Keys.\n Användaruppgifter Autentisering med användaruppgifter är enklast när ni vill testa och utforska nomado REST API. Användaruppgifter bör tillhandahållas med varje request under headern Authorization som är base64-kodad och separerad med :.\nExempel: Om ert användarnamn är myemail@myserver.com och ert lösenord är 123456, så blir base64(användarnamn:lösenord) value: bXllbWFpbEBteXNlcnZlci5jb206MTIzNDU2\ncurl -X POST \\ https://api.nomado.eu \\ -H 'Authorization: BASIC bXllbWFpbEBteXNlcnZlci5jb206MTIzNDU2' //Base64 encoding for myemail@myserver.com:123456  Andra metoder är under utveckling.\n "
+},
+{
+	"uri": "https://developer.nomado.eu/sv/sdks/",
+	"title": "SDKs",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 2 SDKs Complementing nomado API and reducing your efforts required to integrate communications; carefully crafted to keep your peace and excitement in mind, these are SDKs for you.\n"
+},
+{
+	"uri": "https://developer.nomado.eu/sv/sdks/javascript-sdk/",
+	"title": "Javascript SDK",
+	"tags": [],
+	"description": "",
+	"content": " Github | npm\nDet enklaste och rekommenderade (läs: smartaste) sättet att använda nomado REST API i din Node.js-applikation är via vårt SDK.\nInstallation npm install nomado  Snabbstart Om ni inte redan har ett nomado-konto, registrera er och få 10€ till ert konto.\n Nedan följer ett snabbt exempel för hur ni startar biblioteket och skickar ett sms.\nconst nomadoClient = require('nomado'); const USERNAME = 'username'; const PASSWORD = 'password'; const nomado = new nomadoClient({USERNAME, PASSWORD}); const smsOptions = { to: ['32456789012'], message: 'Hello world', unicode: false }; nomado.sms.send(smsOptions) .then((response) =\u0026gt; { console.log(response.code); console.log(response.data); }) .catch((error) =\u0026gt; { console.log(error.code); console.log(error.reason); });  Svar Varje call kommer att returnera ett löfte som kommer att bli löst (eller avvisat) med ett nomadoResponse object som omsluter API-svarskoden och datan.\n// Result object: { code: 200, //OK! reason: \u0026quot;\u0026quot;, //in case of error data: {} }  Autentisering Öppna först biblioteket med era nomado-användaruppgifter.\nconst nomado = new nomadoClient({USERNAME, PASSWORD});  Nu kan du börja skicka begäran till API.\nFunktioner nomadoClient class tillhandahåller de offentliga gränssnitten för åtkomst till nomado API.\n SMS OTP HLR Calls Account  SMS sms.send() Skicka ett sms till ett eller flera nummer.\nnomado.sms.send({ to: ['3245678901','3245678902'], // e164 formatted numberr in array message: 'My first sms from nomado!', unicode: false // Boolean: unicode. });  OTP otp.send() Att generera OTP-kod och skicka via sms till era användare är så enkelt som nedan:\nnomado.otp.send({ \u0026quot;to\u0026quot;: \u0026quot;32412345678\u0026quot;, \u0026quot;template\u0026quot;: \u0026quot;Your verification code is {{CODE}}\u0026quot;, \u0026quot;type\u0026quot;: \u0026quot;NUMERIC\u0026quot;, \u0026quot;length\u0026quot;: 4, \u0026quot;expiry\u0026quot;: 7200 })  otp.verify() nomado.otp.verify({ number: '32456789012', // E164 formatted mobile number used, token: '456789' // OTP generated in previous call. You do not need to store it locally. })  HLR hlr.fetch() Gör en förfrågan\nnomado.hlr.fetch({ numbers: ['32456789012','32456789013'], // e164 formatted numbers });  hlr.validate() nomado.hlr.validate({ number: '32456789012', // e164 formatted number });  "
+},
+{
+	"uri": "https://developer.nomado.eu/sv/sdks/php-sdk/",
+	"title": "PHP SDK",
+	"tags": [],
+	"description": "",
+	"content": " Under utveckling\n PHP Core Under utveckling\n Laravel Under utveckling\n Compose Under utveckling\n "
+},
+{
+	"uri": "https://developer.nomado.eu/sv/sdks/python-sdk/",
+	"title": "Python SDK",
+	"tags": [],
+	"description": "",
+	"content": " Under utveckling\n "
+},
+{
+	"uri": "https://developer.nomado.eu/sv/messaging/",
+	"title": "Messaging",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 3 Messaging Send sms, receive sms via email or web hook. We will guide you for everything you need to know.\n"
+},
+{
+	"uri": "https://developer.nomado.eu/sv/messaging/send-sms/",
+	"title": "Send SMS",
+	"tags": [],
+	"description": "",
+	"content": " Översikt Denna slutpunkt tillåter er att skicka ett eller flera sms på en gång, till vilket land som helst.\nAPI-slutpunkt POST `https://api.nomado.eu/sms/send`  Autentisering Ni kan välja en av autentiseringsmetoderna härifrån.\nMessage object Det JSON object som representerar det sms som ska skickas. Skall inkluderas i request body.\n   key description required default value     to array\u0026lt;string\u0026gt; Array ofE164formatted mobile numbers Ja    message string Your SMS message Ja    unicode boolean Indicates whether your message contains non-gsm characters Nej falskt    SMS-meddelanden är begränsade till 160 tecken (70 om unicode används). Om storleken överskrider denna gräns, kommer meddelandet att delas upp och faktureras som flera separata meddelanden.\n Svar    Statuskod beskrivning     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Exempel på request Headers\nContent-type: application/json Authorization: BASIC base64encodedCredentials  Body\n{ \u0026quot;to\u0026quot;: [\u0026quot;32412345678\u0026quot;,\u0026quot;32423456789\u0026quot;], \u0026quot;message\u0026quot;: \u0026quot;Hello world\u0026quot;, \u0026quot;unicode\u0026quot;: false }  Exempel på svar { \u0026quot;code\u0026quot;: 200, \u0026quot;message\u0026quot;: \u0026quot;OK\u0026quot;, \u0026quot;total_sms\u0026quot;: 2, \u0026quot;valid_numbers\u0026quot;: 2, \u0026quot;data\u0026quot;: { \u0026quot;callerID\u0026quot;: \u0026quot;NOMADO\u0026quot;, \u0026quot;text\u0026quot;: \u0026quot;Hello world\u0026quot;, \u0026quot;unicode\u0026quot;: 0, \u0026quot;32412345678\u0026quot;: { \u0026quot;code\u0026quot;: 200, \u0026quot;status\u0026quot;: \u0026quot;SENT\u0026quot; }, \u0026quot;32423456789\u0026quot;: { \u0026quot;code\u0026quot;: 200, \u0026quot;status\u0026quot;: \u0026quot;SENT\u0026quot; } }, \u0026quot;cost\u0026quot;: 0.20, \u0026quot;currency\u0026quot;: \u0026quot;EUR\u0026quot; }  "
+},
+{
+	"uri": "https://developer.nomado.eu/sv/otp/",
+	"title": "OTP",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 4 OTP OTP (One time password/pin) står för engångspinkod. Att upprätta OTP från grunden är besvärligt och kräver mödosamma uppgifter som att generera slumpmässig pinkod, lagra den för verifikation (som inkluderar att upprätta databas), skicka koden via sms, skriva slutpunkter för senare verifikation med mera. Med denna funktion slipper ni dessa steg och ni får tillgång vår OTP som en gratis service (normaltaxa för sms tillkommer).\n"
+},
+{
+	"uri": "https://developer.nomado.eu/sv/otp/create-2fa-token/",
+	"title": "Create OTP",
+	"tags": [],
+	"description": "",
+	"content": " Denna slutpunkt låter er implementera tvåfaktorsautentisering, på det enkla viset, genom att skicka ett sms med OTP.\nAPI-slutpunkt POST `https://api.nomado.eu/2fa/create`  Autentisering Du kan välja en av autentiseringsmetoderna härifrån.\nBody object Det JSON object som representerar det OTP som ska skickas. Skall inkluderas i request body.\n   alternativ beskrivning nödvändig default value     to string E164 formatted mobile number Ja    template string MUST contain {{CODE}} literal in it, which will be replaced by the generated OTP Nej {{CODE}}   type string Type of OTP required. Possible values: ALPHA, NUMERIC and ALPHANUMERIC Nej ALPHANUMERIC   length Integer length of the OTP required. Max 20 Nej 4   expiry Integer time in seconds after which the OTP will expire automatically. Nej 7200    Response    status code description     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Request example Headers\nContent-type: application/json Authorization: BASIC base64encodedCredentials  Body\n{ \u0026quot;to\u0026quot;: \u0026quot;32412345678\u0026quot;, \u0026quot;template\u0026quot;: \u0026quot;Your verification code is `{{CODE}}`\u0026quot;, \u0026quot;type\u0026quot;: \u0026quot;NUMERIC\u0026quot;, \u0026quot;length\u0026quot;: 4, \u0026quot;expiry\u0026quot;: 7200 }  Response example { \u0026quot;code\u0026quot;: 200, \u0026quot;message\u0026quot;: \u0026quot;OK\u0026quot;, \u0026quot;data\u0026quot;: { \u0026quot;32412345678\u0026quot;: { \u0026quot;code\u0026quot;: 200, \u0026quot;status\u0026quot;: \u0026quot;SENT\u0026quot; }, \u0026quot;text\u0026quot;: \u0026quot;Your verification code is 1234\u0026quot;, \u0026quot;token\u0026quot;: \u0026quot;1234\u0026quot;, \u0026quot;expiry\u0026quot;: 7200, \u0026quot;total_messages\u0026quot;: 1 } }  "
+},
+{
+	"uri": "https://developer.nomado.eu/sv/otp/verify-2fa-token/",
+	"title": "Verify OTP",
+	"tags": [],
+	"description": "",
+	"content": " Översikt OTP är värdelöst om du inte kan verifiera det, inte sant? Nu ska vi se hur enkelt det faktiskt är att verifiera OTP. Inget lokalt utrymme krävs!\nAPI Endpoint POST `https://api.nomado.eu/2fa/verify`  Authentication You can choose one of the authentication methods referenced here.\nBody object The JSON object representing the OTP to verify. Should be included in request body.\n   options description required default value     number string E164 formatted mobile number Yes    token string The OTP to verify Yes     Response    status code description     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Som namnet antyder, kommer OTP att förstöras när det verifierats eller utgått.\n Request example Headers\nContent-type: application/json Authorization: BASIC base64encodedCredentials  Body\n{ \u0026quot;number\u0026quot;: \u0026quot;32412345678\u0026quot;, \u0026quot;token\u0026quot;: \u0026quot;1234\u0026quot; }  Response example { \u0026quot;code\u0026quot;: 200, \u0026quot;message\u0026quot;: \u0026quot;OK\u0026quot;, \u0026quot;verify\u0026quot;: true }  "
+},
+{
+	"uri": "https://developer.nomado.eu/sv/hlr/",
+	"title": "HLR",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 5 HLR Home Location Register eller HLR i förkortning, är en databas med alla mobiltelefoner på jorden som är kopplade till deras specifika mobilnätverk. HLR Lookup tillåter er att ta reda på viktig information om ett nummer, så som ursprungligt nätverk, nuvarande nätverk, roamingstatus, validering av nummer, nuvarande status etc.\n"
+},
+{
+	"uri": "https://developer.nomado.eu/sv/hlr/get-hlr-information/",
+	"title": "Fetch",
+	"tags": [],
+	"description": "",
+	"content": " API Endpoint POST `https://api.nomado.eu/hlr`  Authentication You can choose one of the authentication methods referenced here.\nBody object Det JSON object som representerar numren som ska kollas upp. Skall inkluderas i request body.\n   options description required default value     numbers array\u0026lt;string\u0026gt; Array of E164 formatted mobile numbers Yes     Response    status code description     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Request example Headers\nContent-type: application/json Authorization: BASIC base64encodedCredentials  Body\n{ \u0026quot;numbers\u0026quot;: [\u0026quot;32412345678\u0026quot;,\u0026quot;32423456789\u0026quot;] }  Response example { \u0026quot;code\u0026quot;: 200, \u0026quot;data\u0026quot;: { \u0026quot;3245678901\u0026quot;: { ... }, \u0026quot;3245678902\u0026quot;: { ... }, \u0026quot;valid_numbers\u0026quot;: 2 }, \u0026quot;cost\u0026quot;: 0.05 }  "
+},
+{
+	"uri": "https://developer.nomado.eu/sv/hlr/get-free-hlr-information/",
+	"title": "Free HLR Validation",
+	"tags": [],
+	"description": "",
+	"content": " Översikt Denna slutpunkt, som inte är lika robust som en HLR lookup, låter er hämta grundläggande information om ett telefonnummer, till exempel ifall det är ett giltigt nummer, en fast telefon eller mobil, vilket land det kommer ifrån etc. Detta kostar er ingenting.\nAPI Endpoint POST `https://api.nomado.eu/hlr/validate`  Authentication You can choose one of the authentication methods referenced here.\nQuery URL Bifoga bara numret till API-slutpunktens url, så som https://api.nomado.eu/hlr/validate/[NUMBER] där [NUMBER] kommer ersättas av det faktiska E164-formatterade mobilnumret.\nResponse    status code description     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Request example Headers\nContent-type: application/json Authorization: BASIC base64encodedCredentials  Query URL https://api.nomado.eu/hlr/validate/32456789012\nResponse example { \u0026quot;Status\u0026quot;: \u0026quot;Valid\u0026quot;, \u0026quot;Region\u0026quot;: \u0026quot;BE\u0026quot;, \u0026quot;CountryCode\u0026quot;: 32, \u0026quot;Type\u0026quot;: \u0026quot;Mobile\u0026quot; }  "
 },
 {
 	"uri": "https://developer.nomado.eu/sv/",
-	"title": "nomado API | Send sms | Place call | OTP | 2FA",
+	"title": "Home",
+	"tags": [],
+	"description": "",
+	"content": " Introduktion nomado REST API tillåter er att, på ett enkelt sätt, skicka sms, ringa och ta emot samtal, använda OTP och CRM-integration med mera. Inte bara smart utan enkelt också - det är vårt motto. Vi erbjuder dokumentering, SDK, kodavsnitt och den support ni kan komma att behöva till ert projekt.\nNämnde vi att nomado är det enda företag som erbjuder support i livechatt med riktiga utvecklare? Vi står redo att hjälpa dig!\nOm du inte redan har ett nomado-konto, registrera dig och få 10€ till ert konto.\n "
+},
+{
+	"uri": "https://developer.nomado.eu/sv/categories/",
+	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""

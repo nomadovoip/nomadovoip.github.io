@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SDKs on nomado API | Send sms | Place call | OTP | 2FA</title>
+    <link>https://developer.nomado.eu/sv/sdks/</link>
+    <description>Recent content in SDKs on nomado API | Send sms | Place call | OTP | 2FA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Everything is mine</copyright>
+    
+	<atom:link href="https://developer.nomado.eu/sv/sdks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Javascript SDK</title>
+      <link>https://developer.nomado.eu/sv/sdks/javascript-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/sdks/javascript-sdk/</guid>
+      <description>Github | npm
+Det enklaste och rekommenderade (läs: smartaste) sättet att använda nomado REST API i din Node.js-applikation är via vårt SDK.
+Installation npm install nomado  Snabbstart Om ni inte redan har ett nomado-konto, registrera er och få 10€ till ert konto.
+ Nedan följer ett snabbt exempel för hur ni startar biblioteket och skickar ett sms.
+const nomadoClient = require(&#39;nomado&#39;); const USERNAME = &#39;username&#39;; const PASSWORD = &#39;password&#39;; const nomado = new nomadoClient({USERNAME, PASSWORD}); const smsOptions = { to: [&#39;32456789012&#39;], message: &#39;Hello world&#39;, unicode: false }; nomado.</description>
+    </item>
+    
+    <item>
+      <title>PHP SDK</title>
+      <link>https://developer.nomado.eu/sv/sdks/php-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/sdks/php-sdk/</guid>
+      <description> Under utveckling
+ PHP Core Under utveckling
+ Laravel Under utveckling
+ Compose Under utveckling
+ </description>
+    </item>
+    
+    <item>
+      <title>Python SDK</title>
+      <link>https://developer.nomado.eu/sv/sdks/python-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/sdks/python-sdk/</guid>
+      <description> Under utveckling
+ </description>
+    </item>
+    
+  </channel>
+</rss>

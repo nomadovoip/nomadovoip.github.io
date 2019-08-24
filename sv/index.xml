@@ -1,14 +1,132 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>nomado API | Send sms | Place call | OTP | 2FA</title>
+    <title>Home on nomado API | Send sms | Place call | OTP | 2FA</title>
     <link>https://developer.nomado.eu/sv/</link>
-    <description>Recent content on nomado API | Send sms | Place call | OTP | 2FA</description>
+    <description>Recent content in Home on nomado API | Send sms | Place call | OTP | 2FA</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Everything is mine</copyright>
+    <lastBuildDate>Thu, 22 Aug 2019 17:29:35 +0300</lastBuildDate>
     
 	<atom:link href="https://developer.nomado.eu/sv/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Base URL</title>
+      <link>https://developer.nomado.eu/sv/getting-started/base-url/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/getting-started/base-url/</guid>
+      <description>nomado REST API är servad med följande URL:
+https://api.nomado.eu  Att använda SDK-bibliotek är att rekommendera, så att ni slipper möta framtida mjukvaruproblem.
+ nomado REST API är servad enbart över HTTPS, för att försäkra dataintegritet, GDPR, PSD2, PCI och andra uppfyllelser.</description>
+    </item>
+    
+    <item>
+      <title>Autentisering</title>
+      <link>https://developer.nomado.eu/sv/getting-started/autentisering/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/getting-started/autentisering/</guid>
+      <description>Alla nomado REST API-slutpunkter skyddas med tre autentiseringsmetoder: användaruppgifter, JSON Web Tokens och API Keys.
+Vi rekommenderar att använda JSON Web Tokens och API Keys.
+ Användaruppgifter Autentisering med användaruppgifter är enklast när ni vill testa och utforska nomado REST API. Användaruppgifter bör tillhandahållas med varje request under headern Authorization som är base64-kodad och separerad med :.
+Exempel: Om ert användarnamn är myemail@myserver.com och ert lösenord är 123456, så blir base64(användarnamn:lösenord) value: bXllbWFpbEBteXNlcnZlci5jb206MTIzNDU2</description>
+    </item>
+    
+    <item>
+      <title>Javascript SDK</title>
+      <link>https://developer.nomado.eu/sv/sdks/javascript-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/sdks/javascript-sdk/</guid>
+      <description>Github | npm
+Det enklaste och rekommenderade (läs: smartaste) sättet att använda nomado REST API i din Node.js-applikation är via vårt SDK.
+Installation npm install nomado  Snabbstart Om ni inte redan har ett nomado-konto, registrera er och få 10€ till ert konto.
+ Nedan följer ett snabbt exempel för hur ni startar biblioteket och skickar ett sms.
+const nomadoClient = require(&#39;nomado&#39;); const USERNAME = &#39;username&#39;; const PASSWORD = &#39;password&#39;; const nomado = new nomadoClient({USERNAME, PASSWORD}); const smsOptions = { to: [&#39;32456789012&#39;], message: &#39;Hello world&#39;, unicode: false }; nomado.</description>
+    </item>
+    
+    <item>
+      <title>PHP SDK</title>
+      <link>https://developer.nomado.eu/sv/sdks/php-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/sdks/php-sdk/</guid>
+      <description> Under utveckling
+ PHP Core Under utveckling
+ Laravel Under utveckling
+ Compose Under utveckling
+ </description>
+    </item>
+    
+    <item>
+      <title>Python SDK</title>
+      <link>https://developer.nomado.eu/sv/sdks/python-sdk/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/sdks/python-sdk/</guid>
+      <description> Under utveckling
+ </description>
+    </item>
+    
+    <item>
+      <title>Send SMS</title>
+      <link>https://developer.nomado.eu/sv/messaging/send-sms/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/messaging/send-sms/</guid>
+      <description>Översikt Denna slutpunkt tillåter er att skicka ett eller flera sms på en gång, till vilket land som helst.
+API-slutpunkt POST `https://api.nomado.eu/sms/send`  Autentisering Ni kan välja en av autentiseringsmetoderna härifrån.
+Message object Det JSON object som representerar det sms som ska skickas. Skall inkluderas i request body.
+   key description required default value     to array&amp;lt;string&amp;gt; Array ofE164formatted mobile numbers Ja    message string Your SMS message Ja    unicode boolean Indicates whether your message contains non-gsm characters Nej falskt    SMS-meddelanden är begränsade till 160 tecken (70 om unicode används).</description>
+    </item>
+    
+    <item>
+      <title>Create OTP</title>
+      <link>https://developer.nomado.eu/sv/otp/create-2fa-token/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/otp/create-2fa-token/</guid>
+      <description>Denna slutpunkt låter er implementera tvåfaktorsautentisering, på det enkla viset, genom att skicka ett sms med OTP.
+API-slutpunkt POST `https://api.nomado.eu/2fa/create`  Autentisering Du kan välja en av autentiseringsmetoderna härifrån.
+Body object Det JSON object som representerar det OTP som ska skickas. Skall inkluderas i request body.
+   alternativ beskrivning nödvändig default value     to string E164 formatted mobile number Ja    template string MUST contain {{CODE}} literal in it, which will be replaced by the generated OTP Nej {{CODE}}   type string Type of OTP required.</description>
+    </item>
+    
+    <item>
+      <title>Verify OTP</title>
+      <link>https://developer.nomado.eu/sv/otp/verify-2fa-token/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/otp/verify-2fa-token/</guid>
+      <description>Översikt OTP är värdelöst om du inte kan verifiera det, inte sant? Nu ska vi se hur enkelt det faktiskt är att verifiera OTP. Inget lokalt utrymme krävs!
+API Endpoint POST `https://api.nomado.eu/2fa/verify`  Authentication You can choose one of the authentication methods referenced here.
+Body object The JSON object representing the OTP to verify. Should be included in request body.
+   options description required default value     number string E164 formatted mobile number Yes    token string The OTP to verify Yes     Response    status code description     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Som namnet antyder, kommer OTP att förstöras när det verifierats eller utgått.</description>
+    </item>
+    
+    <item>
+      <title>Fetch</title>
+      <link>https://developer.nomado.eu/sv/hlr/get-hlr-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/hlr/get-hlr-information/</guid>
+      <description>API Endpoint POST `https://api.nomado.eu/hlr`  Authentication You can choose one of the authentication methods referenced here.
+Body object Det JSON object som representerar numren som ska kollas upp. Skall inkluderas i request body.
+   options description required default value     numbers array&amp;lt;string&amp;gt; Array of E164 formatted mobile numbers Yes     Response    status code description     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Request example Headers</description>
+    </item>
+    
+    <item>
+      <title>Free HLR Validation</title>
+      <link>https://developer.nomado.eu/sv/hlr/get-free-hlr-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/hlr/get-free-hlr-information/</guid>
+      <description>Översikt Denna slutpunkt, som inte är lika robust som en HLR lookup, låter er hämta grundläggande information om ett telefonnummer, till exempel ifall det är ett giltigt nummer, en fast telefon eller mobil, vilket land det kommer ifrån etc. Detta kostar er ingenting.
+API Endpoint POST `https://api.nomado.eu/hlr/validate`  Authentication You can choose one of the authentication methods referenced here.
+Query URL Bifoga bara numret till API-slutpunktens url, så som https://api.</description>
+    </item>
     
   </channel>
 </rss>

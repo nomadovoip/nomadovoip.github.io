@@ -4,8 +4,38 @@ User-agent: *
 Sitemap: https://developer.nomado.eu/sitemap.xml
 
 
-allow: /sv/categories/
+allow: /sv/getting-started/
+
+allow: /sv/getting-started/base-url/
+
+allow: /sv/getting-started/autentisering/
+
+allow: /sv/sdks/
+
+allow: /sv/sdks/javascript-sdk/
+
+allow: /sv/sdks/php-sdk/
+
+allow: /sv/sdks/python-sdk/
+
+allow: /sv/messaging/
+
+allow: /sv/messaging/send-sms/
+
+allow: /sv/otp/
+
+allow: /sv/otp/create-2fa-token/
+
+allow: /sv/otp/verify-2fa-token/
+
+allow: /sv/hlr/
+
+allow: /sv/hlr/get-hlr-information/
+
+allow: /sv/hlr/get-free-hlr-information/
 
 allow: /sv/
+
+allow: /sv/categories/
 
 allow: /sv/tags/

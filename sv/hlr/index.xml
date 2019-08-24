@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HLR on nomado API | Send sms | Place call | OTP | 2FA</title>
+    <link>https://developer.nomado.eu/sv/hlr/</link>
+    <description>Recent content in HLR on nomado API | Send sms | Place call | OTP | 2FA</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Everything is mine</copyright>
+    
+	<atom:link href="https://developer.nomado.eu/sv/hlr/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fetch</title>
+      <link>https://developer.nomado.eu/sv/hlr/get-hlr-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/hlr/get-hlr-information/</guid>
+      <description>API Endpoint POST `https://api.nomado.eu/hlr`  Authentication You can choose one of the authentication methods referenced here.
+Body object Det JSON object som representerar numren som ska kollas upp. Skall inkluderas i request body.
+   options description required default value     numbers array&amp;lt;string&amp;gt; Array of E164 formatted mobile numbers Yes     Response    status code description     200 success Request sent successfully   400 bad request Incorrect or missing parameters   401 unauthorized Invalid credentials or incorrect authentication method    Request example Headers</description>
+    </item>
+    
+    <item>
+      <title>Free HLR Validation</title>
+      <link>https://developer.nomado.eu/sv/hlr/get-free-hlr-information/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://developer.nomado.eu/sv/hlr/get-free-hlr-information/</guid>
+      <description>Översikt Denna slutpunkt, som inte är lika robust som en HLR lookup, låter er hämta grundläggande information om ett telefonnummer, till exempel ifall det är ett giltigt nummer, en fast telefon eller mobil, vilket land det kommer ifrån etc. Detta kostar er ingenting.
+API Endpoint POST `https://api.nomado.eu/hlr/validate`  Authentication You can choose one of the authentication methods referenced here.
+Query URL Bifoga bara numret till API-slutpunktens url, så som https://api.</description>
+    </item>
+    
+  </channel>
+</rss>
